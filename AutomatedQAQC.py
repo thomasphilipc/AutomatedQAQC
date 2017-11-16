@@ -60,35 +60,35 @@ class asset:
 
     def createsheet(self):
 
-        if int(self.tag_in)> 0:
-            self.tag_in= 1
-
-        if int(self.ignition_on)> 0:
-            self.ignition_on= 1
-
-        if int(self.journey_periodic)> 0:
-            self.journey_periodic= 1
-
-        if int(self.driver_behaviour)> 0:
-            self.driver_behaviour= 1
-
-        if int(self.idle_start)> 0:
-            self.idle_start= 1
-
-        if int(self.idle_end)> 0:
-            self.idle_end= 1
-
-        if int(self.ignition_off)> 0:
-            self.ignition_off= 1
-
-        if int(self.journey_summary)> 0:
-            self.journey_summary= 1
-
-        if int(self.journey_periodic) > 0:
-            self.journey_periodic=  1
-
-        if int(self.tag_out) > 0:
-            self.tag_out=  1
+        # if int(self.tag_in)> 0:
+        #     self.tag_in= 1
+        #
+        # if int(self.ignition_on)> 0:
+        #     self.ignition_on= 1
+        #
+        # if int(self.journey_periodic)> 0:
+        #     self.journey_periodic= 1
+        #
+        # if int(self.driver_behaviour)> 0:
+        #     self.driver_behaviour= 1
+        #
+        # if int(self.idle_start)> 0:
+        #     self.idle_start= 1
+        #
+        # if int(self.idle_end)> 0:
+        #     self.idle_end= 1
+        #
+        # if int(self.ignition_off)> 0:
+        #     self.ignition_off= 1
+        #
+        # if int(self.journey_summary)> 0:
+        #     self.journey_summary= 1
+        #
+        # if int(self.journey_periodic) > 0:
+        #     self.journey_periodic=  1
+        #
+        # if int(self.tag_out) > 0:
+        #     self.tag_out=  1
 
         print ("{},{},{},{},{},{},{},{},{},{}".format(self.asset_name,self.tag_in,self.ignition_on,self.journey_periodic,self.driver_behaviour,self.idle_start,self.idle_end,self.ignition_off,self.journey_summary,self.tag_out))
 
@@ -222,7 +222,7 @@ class asset:
         #     print("Perfect Tags")
 
 
-with open('EventCount.csv','r') as csvfile:
+with open('Transafe.csv','r') as csvfile:
     reader = csv.reader(csvfile)
     rowcount=0
     total_assets=0
@@ -274,7 +274,7 @@ with open('EventCount.csv','r') as csvfile:
                     # process the Analysis
                     current_asset.processQA()
                     #prepare a sheet
-                    #current_asset.createsheet()
+                    current_asset.createsheet()
                     current_asset = asset(str(row[0]))
 
 
