@@ -53,6 +53,7 @@ with open('TransafeAssetHistory.csv','r') as csvfile:
 
     rowcount=0
     first_entry_flag = True
+    fault_flag=False
     current_asset=None
     previous_1_row = []
     previous_2_row = []
@@ -61,44 +62,74 @@ with open('TransafeAssetHistory.csv','r') as csvfile:
     previous_5_row = []
 
     for row in reader:
+        #check row count
         rowcount += 1
-        # skip first 7 lines
+        # skip first 9 lines which are comments
         if rowcount > 9:
-            # print ("starts the data processing")
+
+            # print("###########")
             # print(row)
+            # print(previous_1_row)
+            # print(previous_2_row)
+            # print(previous_3_row)
+            # print(previous_4_row)
+            # print(previous_5_row)
+            # print("###########")
+
+            # print(row)
+
             # row[1] and row[3] same means they have no data this usually indicates a new asset data follows
-            if (row[1] == row[3]):
+            if (row[1] == row[3]) and row[0] != "Grand Totals":
+                # check if this is the first entry
                 if first_entry_flag:
+                    # print initialize the current asset
                     current_asset = row[0]
                     # print("entered condition indicaiting new asset")
                     total_assets += 1
                     num_of_events = 0
-                    print(row)
-
+                    print("Analysing events for {}" .format(row[0]))
+                    # set first entry to false
                     first_entry_flag=False
                 else:
-                    print(" {} has {} events".format(current_asset, num_of_events))
+                    # print summary of the previous asset
+                    print(" {} has {} events and fault found is {}".format(current_asset, num_of_events,fault_flag))
                     current_asset = row[0]
+                    fault_flag=False
                     # print("entered condition indicaiting new asset")
                     total_assets += 1
                     num_of_events = 0
-                    print(row)
-                #now we check if this is the first entry
+                    print("Analysing events for {}".format(row[0]))
+                #now we check if the following line has the same asset name and has some content in the 3rd column
             elif row[0]==current_asset and row[2] != "":
-                if row[1]== previous_1_row[1]:
-                    print("Eureka")
-                if ((row [1] == previous_1_row [1]) and (previous_2_row[1] == previous_3_row[1])):
-                    print ("Shite mate all of them are the same")
+
+
+                # check for odometer drops or high jumps
+                if (row[1] in ["CAN Periodic","Position Report"]) and (previous_1_row[6] in ["CAN Periodic","Position Report"]):
+                    odo_change = int(row[6])- int(previous_1_row[6])
+                    if odo_change < 0 and odo_change>200:
+                        fault_flag=True
+                        print("{} - {} = {}  , fault found odometer jump at row {}".format(int(row[6]), int(previous_1_row[6]),
+                                                                             (int(row[6]) - int(previous_1_row[6])),rowcount))
+
+
+                # now we check if the sequence of events are in the expected order
+                if row[1] == "Ignition Off":
+                    if previous_1_row[1] in ["Journey Summary","Idle End"] and previous_2_row[1] in ["Tag Out","Journey Summary","Idle End"]:
+                        print("Looks Good, sequence of events are fine at row {}".format(rowcount))
+                    else:
+                        fault_flag = True
+                        print("{} , {} , {}  , fault found in sequence of events at row {}".format(row[1],previous_1_row[1],previous_2_row[1],
+                                                                                           rowcount))
+
+
+
+
+
                 #print(row)
                 num_of_events +=1
-            else :
-                pass
 
-            previous_5_row = previous_4_row
-            previous_4_row = previous_3_row
-            previous_3_row = previous_2_row
-            previous_2_row = previous_1_row
-            previous_1_row = row
+
+
 
         if rowcount == 7:
             previous_2_row = previous_1_row
@@ -112,16 +143,15 @@ with open('TransafeAssetHistory.csv','r') as csvfile:
             previous_3_row = previous_2_row
             previous_2_row = previous_1_row
             previous_1_row = row
+        if rowcount > 9:
+            previous_5_row = previous_4_row
+            previous_4_row = previous_3_row
+            previous_3_row = previous_2_row
+            previous_2_row = previous_1_row
+            previous_1_row = row
 
 
 
-        print("###########")
-        print(row)
-        print(previous_1_row)
-        print(previous_2_row)
-        print(previous_3_row)
-        print(previous_4_row)
-        print(previous_5_row)
-        print ("###########")
-        previous_1_row = row
+
+
 
