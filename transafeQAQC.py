@@ -48,7 +48,7 @@ class asset:
 
 total_assets=0
 
-with open('TransafeAssetHistory.csv','r') as csvfile:
+with open('TransafeAssetHistoryNovember.csv','r') as csvfile:
     reader = csv.reader(csvfile)
 
     rowcount=0
@@ -92,7 +92,12 @@ with open('TransafeAssetHistory.csv','r') as csvfile:
                     first_entry_flag=False
                 else:
                     # print summary of the previous asset
-                    print(" {} has {} events and fault found is {}".format(current_asset, num_of_events,fault_flag))
+                    if fault_flag:
+                        print("QC FAIL !! {} has {} events".format(current_asset, num_of_events))
+                        print("----------------------------------------------------------------")
+                    else:
+                        print("QC PASS !! {} has {} events".format(current_asset, num_of_events))
+                        print("----------------------------------------------------------------")
                     current_asset = row[0]
                     fault_flag=False
                     # print("entered condition indicaiting new asset")
@@ -104,24 +109,39 @@ with open('TransafeAssetHistory.csv','r') as csvfile:
 
 
                 # check for odometer drops or high jumps
-                if (row[1] in ["CAN Periodic","Position Report"]) and (previous_1_row[6] in ["CAN Periodic","Position Report"]):
-                    odo_change = int(row[6])- int(previous_1_row[6])
-                    if odo_change < 0 and odo_change>200:
+                if (row[1] in ["CAN Periodic","Position Report"]) and (previous_1_row[1] in ["CAN Periodic","Position Report"]):
+                    odo_change = int(previous_1_row[6])- int(row[6])
+                    if odo_change < 0 or odo_change>200:
+                        print("checking odo")
                         fault_flag=True
-                        print("{} - {} = {}  , fault found odometer jump at row {}".format(int(row[6]), int(previous_1_row[6]),
+                        print(" ERROR !! {} - {} = {}  , fault found odometer jump at row {}".format(int(row[6]), int(previous_1_row[6]),
                                                                              (int(row[6]) - int(previous_1_row[6])),rowcount))
 
 
-                # now we check if the sequence of events are in the expected order
+                # now we check if the sequence of events are in the expected order for ignition off
                 if row[1] == "Ignition Off":
-                    if previous_1_row[1] in ["Journey Summary","Idle End"] and previous_2_row[1] in ["Tag Out","Journey Summary","Idle End"]:
-                        print("Looks Good, sequence of events are fine at row {}".format(rowcount))
+                    if previous_1_row[1] in ["Journey Summary","Idle End","Tag Out"] and previous_2_row[1] in ["External Power Loss","Tag Out","Tag In","Journey Summary","Idle End","Heartbeat","Stop Moving"]:
+                        print("Looks Good, sequence of events {} , {} , {}  , {} are fine  at row {}".format(row[1],
+                                                                                                   previous_1_row[1],
+                                                                                                   previous_2_row[1],
+                                                                                                   previous_3_row[1],
+                                                                                                   rowcount))
                     else:
                         fault_flag = True
-                        print("{} , {} , {}  , fault found in sequence of events at row {}".format(row[1],previous_1_row[1],previous_2_row[1],
-                                                                                           rowcount))
+                        print(" ERROR !! {} , {} , {}  ,{} fault found in sequence of events at row {}".format(row[1],previous_1_row[1],previous_2_row[1],previous_3_row[1],rowcount))
 
-
+                # now we check if the sequence of events are in the expected order for ignition on
+                if row[1] == "Tag In":
+                    if previous_1_row[1] in ["Journey Summary","Tag In","Ignition On","External Power Restore"] and previous_2_row[1] in ["External Power Loss","Power Up","CAN Periodic", "Heartbeat","Tag Out","Position Report","Start Moving","Ignition Off"]:
+                            print("Looks Good, sequence of events {} , {} , {}  , are fine  at row {}".format(row[1],
+                                                                                                                previous_1_row[
+                                                                                                                    1],
+                                                                                                                previous_2_row[
+                                                                                                                    1],
+                                                                                                                rowcount))
+                    else:
+                        fault_flag = True
+                        print(" ERROR !! {} , {} , {}  , fault found in sequence of events at row {}".format(row[1], previous_1_row[1], previous_2_row[1],rowcount))
 
 
 
