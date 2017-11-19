@@ -80,6 +80,7 @@ with open('TransafeAssetHistoryNovember.csv','r') as csvfile:
 
             # row[1] and row[3] same means they have no data this usually indicates a new asset data follows
             if (row[1] == row[3]) and row[0] != "Grand Totals":
+                last_odo = None
                 # check if this is the first entry
                 if first_entry_flag:
                     # print initialize the current asset
@@ -109,13 +110,18 @@ with open('TransafeAssetHistoryNovember.csv','r') as csvfile:
 
 
                 # check for odometer drops or high jumps
-                if (row[1] in ["CAN Periodic","Position Report"]) and (previous_1_row[1] in ["CAN Periodic","Position Report"]):
-                    odo_change = int(previous_1_row[6])- int(row[6])
-                    if odo_change < 0 or odo_change>200:
-                        print("checking odo")
-                        fault_flag=True
-                        print(" ERROR !! {} - {} = {}  , fault found odometer jump at row {}".format(int(row[6]), int(previous_1_row[6]),
-                                                                             (int(row[6]) - int(previous_1_row[6])),rowcount))
+                if (row[1] in ["CAN Periodic","Position Report","Journey Summary"]):
+
+                    if last_odo == None:
+                        last_odo = int(row[6])
+                    else:
+                        odo_change = int(last_odo)-int(row[6])
+                        last_odo = int(row[6])
+
+                        if odo_change < 0 or odo_change>300:
+                            print("checking odo")
+                            fault_flag=True
+                            print(" ERROR !! fault found odometer jump {} at row {}".format(odo_change,rowcount))
 
 
                 # now we check if the sequence of events are in the expected order for ignition off
@@ -138,6 +144,7 @@ with open('TransafeAssetHistoryNovember.csv','r') as csvfile:
                                                                                                                     1],
                                                                                                                 previous_2_row[
                                                                                                                     1],
+                                                                                                                previous_3_row[1],
                                                                                                                 rowcount))
                     else:
                         fault_flag = True
