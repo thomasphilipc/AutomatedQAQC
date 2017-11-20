@@ -90,7 +90,7 @@ class asset:
         # if int(self.tag_out) > 0:
         #     self.tag_out=  1
 
-        print ("{},{},{},{},{},{},{},{},{},{}".format(self.asset_name,self.tag_in,self.ignition_on,self.journey_periodic,self.driver_behaviour,self.idle_start,self.idle_end,self.ignition_off,self.journey_summary,self.tag_out))
+        print ("{},{},{},{},{},{},{},{},{},{},{}".format(self.asset_name,self.tag_in,self.ignition_on,self.journey_periodic,self.power_up,self.driver_behaviour,self.idle_start,self.idle_end,self.ignition_off,self.journey_summary,self.tag_out))
 
     def processQA(self):
 
@@ -222,7 +222,7 @@ class asset:
         #     print("Perfect Tags")
 
 
-with open('Transafe.csv','r') as csvfile:
+with open('EOEventCount.csv','r') as csvfile:
     reader = csv.reader(csvfile)
     rowcount=0
     total_assets=0
