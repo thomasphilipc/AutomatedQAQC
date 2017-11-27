@@ -48,7 +48,7 @@ class asset:
 
 total_assets=0
 
-with open('TransafeAssetHistoryNovember.csv','r') as csvfile:
+with open('TransafeAssetHistoryNovember1-27.csv','r') as csvfile:
     reader = csv.reader(csvfile)
 
     rowcount=0
@@ -86,6 +86,8 @@ with open('TransafeAssetHistoryNovember.csv','r') as csvfile:
                     # print initialize the current asset
                     current_asset = row[0]
                     # print("entered condition indicaiting new asset")
+                    total_odo_jumps=0
+                    total_unexpected_order=0
                     total_assets += 1
                     num_of_events = 0
                     print("Analysing events for {}" .format(row[0]))
@@ -95,12 +97,15 @@ with open('TransafeAssetHistoryNovember.csv','r') as csvfile:
                     # print summary of the previous asset
                     if fault_flag:
                         print("QC FAIL !! {} has {} events".format(current_asset, num_of_events))
+                        print("QC FAIL !! {} has {} odo jumps and {} unexpected order of events".format(current_asset, total_odo_jumps, total_unexpected_order))
                         print("----------------------------------------------------------------")
                     else:
                         print("QC PASS !! {} has {} events".format(current_asset, num_of_events))
                         print("----------------------------------------------------------------")
                     current_asset = row[0]
                     fault_flag=False
+                    total_odo_jumps = 0
+                    total_unexpected_order = 0
                     # print("entered condition indicaiting new asset")
                     total_assets += 1
                     num_of_events = 0
@@ -119,37 +124,40 @@ with open('TransafeAssetHistoryNovember.csv','r') as csvfile:
                         last_odo = int(row[6])
 
                         if odo_change < 0 or odo_change>300:
-                            print("checking odo")
+                            #print("checking odo")
                             fault_flag=True
-                            print(" ERROR !! fault found odometer jump {} at row {}".format(odo_change,rowcount))
+                            #print(" ERROR !! fault found odometer jump {} at row {}".format(odo_change,rowcount))
+                            total_odo_jumps+=1
 
 
                 # now we check if the sequence of events are in the expected order for ignition off
                 if row[1] == "Ignition Off":
                     if previous_1_row[1] in ["Journey Summary","Idle End","Tag Out"] and previous_2_row[1] in ["External Power Loss","Tag Out","Tag In","Journey Summary","Idle End","Heartbeat","Stop Moving"]:
-                        print("Looks Good, sequence of events {} , {} , {}  , {} are fine  at row {}".format(row[1],
-                                                                                                   previous_1_row[1],
-                                                                                                   previous_2_row[1],
-                                                                                                   previous_3_row[1],
-                                                                                                   rowcount))
+                        # print("Looks Good, sequence of events {} , {} , {}  , {} are fine  at row {}".format(row[1],
+                        #                                                                            previous_1_row[1],
+                        #                                                                            previous_2_row[1],
+                        #                                                                            previous_3_row[1],
+                        #                                                                            rowcount))
+                        pass
                     else:
                         fault_flag = True
-                        print(" ERROR !! {} , {} , {}  ,{} fault found in sequence of events at row {}".format(row[1],previous_1_row[1],previous_2_row[1],previous_3_row[1],rowcount))
-
+                        #print(" ERROR !! {} , {} , {}  ,{} fault found in sequence of events at row {}".format(row[1],previous_1_row[1],previous_2_row[1],previous_3_row[1],rowcount))
+                        total_unexpected_order+=1
                 # now we check if the sequence of events are in the expected order for ignition on
                 if row[1] == "Tag In":
                     if previous_1_row[1] in ["Journey Summary","Tag In","Ignition On","External Power Restore"] and previous_2_row[1] in ["External Power Loss","Power Up","CAN Periodic", "Heartbeat","Tag Out","Position Report","Start Moving","Ignition Off"]:
-                            print("Looks Good, sequence of events {} , {} , {}  , are fine  at row {}".format(row[1],
-                                                                                                                previous_1_row[
-                                                                                                                    1],
-                                                                                                                previous_2_row[
-                                                                                                                    1],
-                                                                                                                previous_3_row[1],
-                                                                                                                rowcount))
+                            # print("Looks Good, sequence of events {} , {} , {}  , are fine  at row {}".format(row[1],
+                            #                                                                                     previous_1_row[
+                            #                                                                                         1],
+                            #                                                                                     previous_2_row[
+                            #                                                                                         1],
+                            #                                                                                     previous_3_row[1],
+                            #                                                                                     rowcount))
+                        pass
                     else:
                         fault_flag = True
-                        print(" ERROR !! {} , {} , {}  , fault found in sequence of events at row {}".format(row[1], previous_1_row[1], previous_2_row[1],rowcount))
-
+                        #print(" ERROR !! {} , {} , {}  , fault found in sequence of events at row {}".format(row[1], previous_1_row[1], previous_2_row[1],rowcount))
+                        total_unexpected_order+=1
 
 
                 #print(row)
