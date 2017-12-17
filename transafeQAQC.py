@@ -48,7 +48,7 @@ class asset:
 
 total_assets=0
 
-with open('TransafeAssetHistoryNovember1-27.csv','r') as csvfile:
+with open('TransafeNov1to12.csv','r') as csvfile:
     reader = csv.reader(csvfile)
 
     rowcount=0
@@ -126,7 +126,7 @@ with open('TransafeAssetHistoryNovember1-27.csv','r') as csvfile:
                         if odo_change < 0 or odo_change>300:
                             #print("checking odo")
                             fault_flag=True
-                            #print(" ERROR !! fault found odometer jump {} at row {}".format(odo_change,rowcount))
+                            print(" ERROR !! fault found odometer jump {} at row {}".format(odo_change,rowcount))
                             total_odo_jumps+=1
 
 
@@ -141,7 +141,7 @@ with open('TransafeAssetHistoryNovember1-27.csv','r') as csvfile:
                         pass
                     else:
                         fault_flag = True
-                        #print(" ERROR !! {} , {} , {}  ,{} fault found in sequence of events at row {}".format(row[1],previous_1_row[1],previous_2_row[1],previous_3_row[1],rowcount))
+                        print(" ERROR !! {} , {} , {}  ,{} fault found in sequence of events at row {}".format(row[1],previous_1_row[1],previous_2_row[1],previous_3_row[1],rowcount))
                         total_unexpected_order+=1
                 # now we check if the sequence of events are in the expected order for ignition on
                 if row[1] == "Tag In":
@@ -156,7 +156,7 @@ with open('TransafeAssetHistoryNovember1-27.csv','r') as csvfile:
                         pass
                     else:
                         fault_flag = True
-                        #print(" ERROR !! {} , {} , {}  , fault found in sequence of events at row {}".format(row[1], previous_1_row[1], previous_2_row[1],rowcount))
+                        print(" ERROR !! {} , {} , {}  , fault found in sequence of events at row {}".format(row[1], previous_1_row[1], previous_2_row[1],rowcount))
                         total_unexpected_order+=1
 
 
