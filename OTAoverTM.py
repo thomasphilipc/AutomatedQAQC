@@ -11,6 +11,7 @@ class asset:
     def __init__(self, imei):
         self.imei = imei
         self.status_flag = True
+        failed_lines = []
 
     # function to check if the identifier line was a successs or fail
     def check_status(self,identifier,text):
@@ -25,8 +26,10 @@ class asset:
                     self.status_flag = False
             else:
                 self.status_flag = False
+
         if (text == "Failed"):
             self.status_flag = False
+            self.failed_lines.append(identifier)
 
 
 
@@ -89,18 +92,26 @@ with open('WT-ST1.csv','r') as csvfile:
 
 
             else:
-                print ("new asset reached")
-                print ("{} is current imei , {} is read imei".format(current_imei,list[0]))
+                # print ("new asset reached")
+                # print ("{} is current imei , {} is read imei".format(current_imei,list[0]))
                 if current_asset.status_flag:
                     print("Analysis for {} is Suceess".format(current_imei))
                     current_imei = list[0]
                     current_asset = asset(current_imei)
                 else:
                     print("Analysis for {} has failed".format(current_imei))
+                    print(set(current_asset.failed_lines))
                 current_imei = list[0]
                 current_asset = asset(current_imei)
 
-
+    if current_asset.status_flag:
+        print("Analysis for {} is Suceess".format(current_imei))
+        current_asset = asset(current_imei)
+    else:
+        print("Analysis for {} has failed".format(current_imei))
+        print (set(current_asset.failed_lines))
+    current_imei = list[0]
+    current_asset = asset(current_imei)
 
 
 
