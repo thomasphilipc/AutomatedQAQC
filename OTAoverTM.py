@@ -11,25 +11,32 @@ class asset:
     def __init__(self, imei):
         self.imei = imei
         self.status_flag = True
-        failed_lines = []
+        self.failed_lines = []
 
     # function to check if the identifier line was a successs or fail
     def check_status(self,identifier,text):
 
-        if (identifier in text):
-            # print (self.status_flag)
-            # print(self.imei)
-            # print("text {}".format(text))
-            # print("idenitifer{}".format(identifier))
-            if ("$SUCCESS$" in text):
-                if self.status_flag == False:
-                    self.status_flag = False
-            else:
-                self.status_flag = False
+        # print(self.status_flag)
+        # print(self.imei)
+        # print("text {}".format(text))
+        # print("idenitifer{}".format(identifier))
 
         if (text == "Failed"):
             self.status_flag = False
+            # print(self.failed_lines)
             self.failed_lines.append(identifier)
+
+
+        elif (identifier in text):
+
+            if ("$SUCCESS$" in text):
+                if self.status_flag == False:
+                    self.status_flag = False
+
+            else:
+                self.status_flag = False
+
+
 
 
 
@@ -42,6 +49,10 @@ with open('WT-ST1.csv','r') as csvfile:
     current_imei=None
     success_count = 0
     success =True
+
+    check_lines = ["AL29","CNF.EraseBackup","AL34","AL81","AL82","AL76","AL99","AL83","DEVICE.CMD.PFAL.EN","CNF.EraseBackup"]
+
+
     for row in reader:
         # check row count
         rowcount += 1
@@ -68,6 +79,7 @@ with open('WT-ST1.csv','r') as csvfile:
 
             # the content to parse is stored in text
             text=list[2]
+            fail_text=list[1]
 
 
 
@@ -78,17 +90,27 @@ with open('WT-ST1.csv','r') as csvfile:
                 # print(current_asset.imei)
                 # print("text {}".format(text))
 
+                for i in check_lines:
+                    # print(i)
 
-                current_asset.check_status("CNF.EraseBackup",text)
-                current_asset.check_status("AL29",text)
-                current_asset.check_status("AL34",text)
-                current_asset.check_status("AL81",text)
-                current_asset.check_status("AL82",text)
-                current_asset.check_status("AL76",text)
-                current_asset.check_status("AL99",text)
-                current_asset.check_status("AL83",text)
-                current_asset.check_status("DEVICE.CMD.PFAL.EN",text)
-                current_asset.check_status("CNF.EraseBackup",text)
+                    if i in text:
+                        # print ("{} found in text".format(i))
+                        current_asset.check_status(i, text)
+
+                    if i in fail_text:
+                        # print("{} found in text".format(i))
+                        current_asset.check_status(i, text)
+
+                # current_asset.check_status("CNF.EraseBackup",text)
+                # current_asset.check_status("AL29",text)
+                # current_asset.check_status("AL34",text)
+                # current_asset.check_status("AL81",text)
+                # current_asset.check_status("AL82",text)
+                # current_asset.check_status("AL76",text)
+                # current_asset.check_status("AL99",text)
+                # current_asset.check_status("AL83",text)
+                # current_asset.check_status("DEVICE.CMD.PFAL.EN",text)
+                # current_asset.check_status("CNF.EraseBackup",text)
 
 
             else:
