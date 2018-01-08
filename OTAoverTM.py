@@ -21,12 +21,14 @@ class asset:
         # print("text {}".format(text))
         # print("idenitifer{}".format(identifier))
 
+        # check if the content on text is Failed if so add that to the failed lines list
         if (text == "Failed"):
             self.status_flag = False
             # print(self.failed_lines)
             self.failed_lines.append(identifier)
 
 
+        # check if the identifier is present on the text also check the SUCCESS text is present
         elif (identifier in text):
 
             if ("$SUCCESS$" in text):
@@ -50,6 +52,7 @@ with open('WT-ST1.csv','r') as csvfile:
     success_count = 0
     success =True
 
+    # enter the identifers you would like to check for on the file
     check_lines = ["AL29","CNF.EraseBackup","AL34","AL81","AL82","AL76","AL99","AL83","DEVICE.CMD.PFAL.EN","CNF.EraseBackup"]
 
 
@@ -79,6 +82,7 @@ with open('WT-ST1.csv','r') as csvfile:
 
             # the content to parse is stored in text
             text=list[2]
+            # capture the failed line
             fail_text=list[1]
 
 
@@ -101,17 +105,6 @@ with open('WT-ST1.csv','r') as csvfile:
                         # print("{} found in text".format(i))
                         current_asset.check_status(i, text)
 
-                # current_asset.check_status("CNF.EraseBackup",text)
-                # current_asset.check_status("AL29",text)
-                # current_asset.check_status("AL34",text)
-                # current_asset.check_status("AL81",text)
-                # current_asset.check_status("AL82",text)
-                # current_asset.check_status("AL76",text)
-                # current_asset.check_status("AL99",text)
-                # current_asset.check_status("AL83",text)
-                # current_asset.check_status("DEVICE.CMD.PFAL.EN",text)
-                # current_asset.check_status("CNF.EraseBackup",text)
-
 
             else:
                 # print ("new asset reached")
@@ -121,7 +114,7 @@ with open('WT-ST1.csv','r') as csvfile:
                     current_imei = list[0]
                     current_asset = asset(current_imei)
                 else:
-                    print("Analysis for {} has failed".format(current_imei))
+                    print("Analysis for {} has failed and below are the lines that failed".format(current_imei))
                     print(set(current_asset.failed_lines))
                 current_imei = list[0]
                 current_asset = asset(current_imei)

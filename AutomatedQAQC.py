@@ -26,17 +26,20 @@ class asset:
     heartbeat = None
     power_up = None
     event_count = None
+    power_loss = None
+    power_restore =None
     command_response = None
     ext_power_loss = None
     ext_power_restore = None
     others = None
     driver_behaviour=0
+    analysis_summary= 0
 
 
     def __init__(self,asset_name):
         self.asset_name=asset_name
 
-    def add_events(self,ign_on,ign_off,tag_in,tag_out,idle_start,idle_end,journey_periodic,journey_summary,heartbeat,power_up,command_response,ext_power_loss,ext_power_restore,others,driver_behaviour):
+    def add_events(self,ign_on,ign_off,tag_in,tag_out,idle_start,idle_end,journey_periodic,journey_summary,heartbeat,power_up,power_loss,power_restore,command_response,ext_power_loss,ext_power_restore,others,driver_behaviour):
         self.heartbeat = heartbeat
         self.idle_end = idle_end
         self.idle_start = idle_start
@@ -51,46 +54,69 @@ class asset:
         self.ext_power_loss = ext_power_loss
         self.ext_power_restore = ext_power_restore
         self.driver_behaviour= driver_behaviour
+        self.power_restore = power_restore
+        self.power_loss = power_loss
         self.others = others
+
 
     def add_summary(self,event_count,total_events):
         self.total_event=total_events
         self.event_count=event_count
 
+        # calculating a summary of the analysis
+        # a value of 0 means no issues were found on analysis
+        # a value of 1 means there was tag mismatches
+        # a value of 2 means there was ignition mismatches
+        # a value of 4 means there was idling mismatches
+        # a value of 8 means the vehicle is possibly on service mode or tags are not working
+        # a value of 16 means journey summary not working
+        # a value of 32 means
+        # a value of 64 means
+
+        # if tag in is more than 1 and the mismatch is more than three then flag tag in mismatch error
+        if int(self.tag_in) > 0:
+            tagin_mismatch = int(self.tag_in) - int(self.tag_out)
+            if tagin_mismatch <0 :
+                tagin_mismatch = tagin_mismatch * -1
+
+            if tagin_mismatch > 3:
+                self.analysis_summary +=1
+
+        # if ignition is more than 1 and the mismatch is more than three then flag ignition mismatch error
+        if int(self.ignition_on) > 0:
+            ignition_mismatch = int(self.ignition_on) - int(self.ignition_off)
+            if ignition_mismatch <0 :
+                ignition_mismatch = ignition_mismatch * -1
+
+            if ignition_mismatch > 3:
+                self.analysis_summary +=2
+
+            if self.tag_in==0:
+                self.analysis_summary += 8
+
+        # if idle is more than 1 and the mismatch is more than three then flag ignition mismatch error
+        if int(self.idle_start) > 0:
+            idle_mismatch = int(self.idle_start) - int(self.idle_end)
+            if idle_mismatch <0 :
+                idle_mismatch = idle_mismatch * -1
+
+            if idle_mismatch > 3:
+                self.analysis_summary +=4
+
+        # if journey summary = 0 but there is driver behaviour then there is a journey summary issue
+        if int(self.journey_summary) == 0 :
+            if int(self.driver_behaviour) > 0:
+                self.analysis_summary += 16
+
+        # heartbeat present but no journey periodic indicates an issue with script.
+        if int(self.heartbeat) > 0:
+            if int(self.journey_periodic) == 0:
+                self.analysis_summary += 32
 
     def createsheet(self):
 
-        # if int(self.tag_in)> 0:
-        #     self.tag_in= 1
-        #
-        # if int(self.ignition_on)> 0:
-        #     self.ignition_on= 1
-        #
-        # if int(self.journey_periodic)> 0:
-        #     self.journey_periodic= 1
-        #
-        # if int(self.driver_behaviour)> 0:
-        #     self.driver_behaviour= 1
-        #
-        # if int(self.idle_start)> 0:
-        #     self.idle_start= 1
-        #
-        # if int(self.idle_end)> 0:
-        #     self.idle_end= 1
-        #
-        # if int(self.ignition_off)> 0:
-        #     self.ignition_off= 1
-        #
-        # if int(self.journey_summary)> 0:
-        #     self.journey_summary= 1
-        #
-        # if int(self.journey_periodic) > 0:
-        #     self.journey_periodic=  1
-        #
-        # if int(self.tag_out) > 0:
-        #     self.tag_out=  1
 
-        print ("{},{},{},{},{},{},{},{},{},{},{}".format(self.asset_name,self.tag_in,self.ignition_on,self.journey_periodic,self.power_up,self.driver_behaviour,self.idle_start,self.idle_end,self.ignition_off,self.journey_summary,self.tag_out))
+        print ("{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}".format(self.asset_name,self.tag_in,self.ignition_on,self.journey_periodic,self.power_up,self.power_loss,self.power_restore,self.driver_behaviour,self.idle_start,self.idle_end,self.ignition_off,self.journey_summary,self.heartbeat,self.tag_out,self.analysis_summary))
 
     def processQA(self):
 
@@ -238,6 +264,8 @@ with open('EOEventCount.csv','r') as csvfile:
     journey_summary = 0
     heartbeat = 0
     power_up = 0
+    power_loss = 0
+    power_restore = 0
     command_response = 0
     ext_power_loss = 0
     ext_power_restore = 0
@@ -267,7 +295,7 @@ with open('EOEventCount.csv','r') as csvfile:
                 else:
                     #print("entered else")
                     # we save the existing data to the class
-                    current_asset.add_events(ignition_on,ignition_off,tag_in,tag_out,idle_start,idle_end,journey_periodic,journey_summary,heartbeat,power_up,command_response,ext_power_loss,ext_power_restore,others,driver_behaviour)
+                    current_asset.add_events(ignition_on,ignition_off,tag_in,tag_out,idle_start,idle_end,journey_periodic,journey_summary,heartbeat,power_up,power_restore, power_restore,command_response,ext_power_loss,ext_power_restore,others,driver_behaviour)
                     current_asset.add_summary(event_count,total_event)
                     # we process data for the asset in memorry
 
@@ -294,6 +322,8 @@ with open('EOEventCount.csv','r') as csvfile:
                     journey_summary = 0
                     heartbeat = 0
                     power_up = 0
+                    power_loss = 0
+                    power_restore = 0
                     driver_behaviour = 0
                     event_count = 0
                     others = 0
@@ -332,6 +362,10 @@ with open('EOEventCount.csv','r') as csvfile:
                     heartbeat = row[3]
                 elif row[2] == 'Power Up':
                     power_up = row[3]
+                elif row[2] == 'Power Loss':
+                    power_loss = row[3]
+                elif row[2] == 'Power Restore':
+                    power_restore = row[3]
                 elif row[2] == 'Harsh Cornering':
                     driver_behaviour += int(row[3])
                 elif row[2]  == 'Harsh Acceleration':
