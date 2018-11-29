@@ -1,0 +1,329 @@
+Analysing events for AD 1/63222
+QC PASS !! AD 1/63222 has 27 events
+----------------------------------------------------------------
+Analysing events for AD 1/63236
+QC PASS !! AD 1/63236 has 17 events
+----------------------------------------------------------------
+Analysing events for AD 1/63430
+QC PASS !! AD 1/63430 has 16 events
+----------------------------------------------------------------
+Analysing events for AD 1/84495
+QC PASS !! AD 1/84495 has 0 events
+----------------------------------------------------------------
+Analysing events for AD 1/91351
+QC PASS !! AD 1/91351 has 17 events
+----------------------------------------------------------------
+Analysing events for DXB 13326
+QC PASS !! DXB 13326 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 24609
+QC PASS !! DXB 24609 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 24614
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 104
+ ERROR !! Tag In , Tag Out , External Power Loss  , fault found in sequence of events at row 120
+ ERROR !! Ignition Off , Ignition On , Power Up  ,Ignition Off fault found in sequence of events at row 128
+ ERROR !! Tag In , Tag Out , External Power Loss  , fault found in sequence of events at row 136
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 138
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 140
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 142
+QC FAIL !! DXB 24614 has 44 events
+QC FAIL !! DXB 24614 has 0 odo jumps and 7 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 26238
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 257
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 259
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 261
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 263
+ ERROR !! Tag In , Start Moving , Position Report  , fault found in sequence of events at row 321
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 327
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 329
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 331
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 333
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 335
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 337
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 339
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 341
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 343
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 345
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 347
+ ERROR !! Tag In , Tag Out , External Power Loss  , fault found in sequence of events at row 351
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 353
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 355
+QC FAIL !! DXB 26238 has 211 events
+QC FAIL !! DXB 26238 has 0 odo jumps and 19 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 26239
+ ERROR !! Ignition Off , Tag In , Ignition On  ,Start Moving fault found in sequence of events at row 379
+ ERROR !! Tag In , Start Moving , Stop Moving  , fault found in sequence of events at row 504
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 506
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 508
+QC FAIL !! DXB 26239 has 155 events
+QC FAIL !! DXB 26239 has 0 odo jumps and 4 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 26240
+QC PASS !! DXB 26240 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 26867
+QC PASS !! DXB 26867 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 26872
+QC PASS !! DXB 26872 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 26929
+ ERROR !! Tag In , Ignition On , Geofence Entry  , fault found in sequence of events at row 587
+ ERROR !! Tag In , Ignition On , Geofence Entry  , fault found in sequence of events at row 915
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Power Up fault found in sequence of events at row 926
+QC FAIL !! DXB 26929 has 626 events
+QC FAIL !! DXB 26929 has 0 odo jumps and 3 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 28579
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 1251
+ ERROR !! Ignition Off , Stop Moving , Journey Summary  ,Tag Out fault found in sequence of events at row 1313
+ ERROR !! Tag In , Start Moving , Position Report  , fault found in sequence of events at row 1829
+ ERROR !! Ignition Off , Tag In , Ignition On  ,Start Moving fault found in sequence of events at row 1976
+ ERROR !! Tag In , Tag In , Ignition On  , fault found in sequence of events at row 2172
+QC FAIL !! DXB 28579 has 1227 events
+QC FAIL !! DXB 28579 has 0 odo jumps and 5 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 30912
+QC PASS !! DXB 30912 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 45424
+QC PASS !! DXB 45424 has 30 events
+----------------------------------------------------------------
+Analysing events for DXB 45539
+QC PASS !! DXB 45539 has 30 events
+----------------------------------------------------------------
+Analysing events for DXB 46098
+QC PASS !! DXB 46098 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 68459
+QC PASS !! DXB 68459 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 69585
+ ERROR !! Ignition Off , Stop Moving , Stop Moving  ,Journey Summary fault found in sequence of events at row 2702
+ ERROR !! Ignition Off , Ignition On , Ignition Off  ,Tag Out fault found in sequence of events at row 2914
+QC FAIL !! DXB 69585 has 495 events
+QC FAIL !! DXB 69585 has 0 odo jumps and 2 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 70487
+ ERROR !! Ignition Off , Ignition On , CAN Periodic  ,CAN Periodic fault found in sequence of events at row 2954
+ ERROR !! Tag In , Ignition On , Command Response  , fault found in sequence of events at row 3033
+ ERROR !! Tag In , CAN Periodic , Ignition Off  , fault found in sequence of events at row 3043
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 3045
+ ERROR !! Ignition Off , Tag Out , Ignition On  ,Tag In fault found in sequence of events at row 3048
+ ERROR !! Tag In , Ignition On , Geofence Entry  , fault found in sequence of events at row 3053
+ ERROR !! fault found odometer jump 907093 at row 3075
+ ERROR !! Tag In , Ignition On , Geofence Entry  , fault found in sequence of events at row 3088
+ ERROR !! fault found odometer jump -907093 at row 3090
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Ignition Off fault found in sequence of events at row 3121
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Ignition Off fault found in sequence of events at row 3124
+ ERROR !! Tag In , Tag Out , Ignition On  , fault found in sequence of events at row 3136
+QC FAIL !! DXB 70487 has 198 events
+QC FAIL !! DXB 70487 has 2 odo jumps and 10 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 70506
+ ERROR !! Tag In , Ignition On , Journey Summary  , fault found in sequence of events at row 3291
+ ERROR !! Tag In , Start Moving , Position Report  , fault found in sequence of events at row 3500
+QC FAIL !! DXB 70506 has 398 events
+QC FAIL !! DXB 70506 has 0 odo jumps and 2 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 71995
+ ERROR !! Tag In , Ignition On , Geofence Entry  , fault found in sequence of events at row 3559
+QC FAIL !! DXB 71995 has 20 events
+QC FAIL !! DXB 71995 has 0 odo jumps and 1 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 74386
+QC PASS !! DXB 74386 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 75389
+ ERROR !! Tag In , Start Moving , Position Report  , fault found in sequence of events at row 3587
+ ERROR !! Tag In , CAN Periodic , CAN Periodic  , fault found in sequence of events at row 3687
+QC FAIL !! DXB 75389 has 847 events
+QC FAIL !! DXB 75389 has 0 odo jumps and 2 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 75390
+ ERROR !! Tag In , Tag Out , External Power Loss  , fault found in sequence of events at row 4440
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 4442
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 4444
+ ERROR !! fault found odometer jump -1 at row 4450
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 4714
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 4716
+ ERROR !! Tag In , Tag Out , Power Up  , fault found in sequence of events at row 4807
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 4834
+QC FAIL !! DXB 75390 has 424 events
+QC FAIL !! DXB 75390 has 1 odo jumps and 7 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 75391
+QC PASS !! DXB 75391 has 31 events
+----------------------------------------------------------------
+Analysing events for DXB 75392
+QC PASS !! DXB 75392 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 76223
+QC PASS !! DXB 76223 has 485 events
+----------------------------------------------------------------
+Analysing events for DXB 77165
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 5784
+ ERROR !! Ignition Off , Tag In , Ignition On  ,Position Report fault found in sequence of events at row 5995
+ ERROR !! Tag In , Start Moving , Ignition On  , fault found in sequence of events at row 6056
+ ERROR !! Tag In , Tag In , Ignition On  , fault found in sequence of events at row 6184
+QC FAIL !! DXB 77165 has 910 events
+QC FAIL !! DXB 77165 has 0 odo jumps and 4 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 77175
+QC PASS !! DXB 77175 has 37 events
+----------------------------------------------------------------
+Analysing events for DXB 77865
+QC PASS !! DXB 77865 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 79121
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Ignition Off fault found in sequence of events at row 6527
+ ERROR !! Tag In , Tag Out , External Power Loss  , fault found in sequence of events at row 6718
+QC FAIL !! DXB 79121 has 641 events
+QC FAIL !! DXB 79121 has 0 odo jumps and 2 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 80205
+QC PASS !! DXB 80205 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 84918
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Journey Summary fault found in sequence of events at row 6994
+ ERROR !! Tag In , Ignition On , Journey Summary  , fault found in sequence of events at row 7001
+ ERROR !! fault found odometer jump 896517 at row 7019
+QC FAIL !! DXB 84918 has 85 events
+QC FAIL !! DXB 84918 has 1 odo jumps and 2 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 84986
+QC PASS !! DXB 84986 has 31 events
+----------------------------------------------------------------
+Analysing events for DXB 87506
+QC PASS !! DXB 87506 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 90958
+QC PASS !! DXB 90958 has 4 events
+----------------------------------------------------------------
+Analysing events for DXB 96867
+ ERROR !! Tag In , Start Moving , Position Report  , fault found in sequence of events at row 7216
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 7218
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 7220
+ ERROR !! Tag In , Tag Out , External Power Loss  , fault found in sequence of events at row 7224
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 7226
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 7228
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 7230
+ ERROR !! Ignition Off , External Power Loss , Tag Out  ,External Power Restore fault found in sequence of events at row 7303
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Start Moving fault found in sequence of events at row 7383
+ ERROR !! Tag In , Tag Out , Power Up  , fault found in sequence of events at row 7602
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 7604
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 7606
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 7608
+QC FAIL !! DXB 96867 has 528 events
+QC FAIL !! DXB 96867 has 0 odo jumps and 13 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 98028
+QC PASS !! DXB 98028 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 98031
+QC PASS !! DXB 98031 has 0 events
+----------------------------------------------------------------
+Analysing events for KW-91/35939
+ ERROR !! Tag In , CAN Periodic , Start Moving  , fault found in sequence of events at row 7624
+QC FAIL !! KW-91/35939 has 675 events
+QC FAIL !! KW-91/35939 has 0 odo jumps and 1 unexpected order of events
+----------------------------------------------------------------
+Analysing events for KW-91/39076
+ ERROR !! Ignition Off , Journey Summary ,   ,Count: 675 fault found in sequence of events at row 8292
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Ignition Off fault found in sequence of events at row 8587
+ ERROR !! Tag In , Tag Out , CAN Periodic  , fault found in sequence of events at row 8678
+ ERROR !! Ignition Off , Ignition On , CAN Periodic  ,CAN Periodic fault found in sequence of events at row 8754
+ ERROR !! Ignition Off , Tag Out , Ignition On  ,Ignition Off fault found in sequence of events at row 8757
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Start Moving fault found in sequence of events at row 8827
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Start Moving fault found in sequence of events at row 9002
+ ERROR !! Ignition Off , Heartbeat , External Power Loss  ,Heartbeat fault found in sequence of events at row 9173
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Ignition Off fault found in sequence of events at row 9176
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Start Moving fault found in sequence of events at row 9316
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Position Report fault found in sequence of events at row 9431
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Ignition Off fault found in sequence of events at row 9434
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Start Moving fault found in sequence of events at row 9440
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Position Report fault found in sequence of events at row 9540
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Ignition Off fault found in sequence of events at row 9543
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Start Moving fault found in sequence of events at row 9724
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Start Moving fault found in sequence of events at row 9730
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Start Moving fault found in sequence of events at row 9735
+QC FAIL !! KW-91/39076 has 1703 events
+QC FAIL !! KW-91/39076 has 0 odo jumps and 18 unexpected order of events
+----------------------------------------------------------------
+Analysing events for KW-95/15713
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 10788
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 10812
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 10823
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 10825
+ ERROR !! Ignition Off , Ignition On , Ignition Off  ,Tag Out fault found in sequence of events at row 10830
+ ERROR !! Tag In , Start Moving , Position Report  , fault found in sequence of events at row 10840
+ ERROR !! Ignition Off , Heartbeat , Tag Out  ,Power Up fault found in sequence of events at row 11813
+ ERROR !! Ignition Off , Ignition Off , Heartbeat  ,Tag Out fault found in sequence of events at row 11814
+QC FAIL !! KW-95/15713 has 1997 events
+QC FAIL !! KW-95/15713 has 0 odo jumps and 8 unexpected order of events
+----------------------------------------------------------------
+Analysing events for KW-95/15714
+ ERROR !! Ignition Off , Tag Out ,   ,Count: 1997 fault found in sequence of events at row 11996
+ ERROR !! Tag In , Ignition On , Journey Summary  , fault found in sequence of events at row 11999
+QC FAIL !! KW-95/15714 has 1525 events
+QC FAIL !! KW-95/15714 has 0 odo jumps and 2 unexpected order of events
+----------------------------------------------------------------
+Analysing events for KWI 91-35940
+ ERROR !! Ignition Off , Stop Moving , Tag Out  ,Heartbeat fault found in sequence of events at row 13679
+ ERROR !! Ignition Off , Stop Moving , Tag Out  ,Tag In fault found in sequence of events at row 13708
+ ERROR !! fault found odometer jump 1351058 at row 13709
+ ERROR !! Ignition Off , Stop Moving , Tag Out  ,Tag In fault found in sequence of events at row 13717
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 13777
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 13779
+QC FAIL !! KWI 91-35940 has 275 events
+QC FAIL !! KWI 91-35940 has 1 odo jumps and 5 unexpected order of events
+----------------------------------------------------------------
+Analysing events for KWI 91/36314
+ ERROR !! Tag In , Position Report , CAN Periodic  , fault found in sequence of events at row 14014
+ ERROR !! Tag In , Start Moving , Position Report  , fault found in sequence of events at row 14285
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Ignition Off fault found in sequence of events at row 14308
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 14890
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 14897
+ ERROR !! Tag In , Position Report , Start Moving  , fault found in sequence of events at row 14907
+ ERROR !! Tag In , CAN Periodic , Tag Out  , fault found in sequence of events at row 14910
+ ERROR !! Tag In , Tag Out , External Power Loss  , fault found in sequence of events at row 14916
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 14918
+ ERROR !! Tag In , Tag Out , Ignition On  , fault found in sequence of events at row 14933
+ ERROR !! Ignition Off , Tag In , Tag Out  ,Ignition On fault found in sequence of events at row 14934
+ ERROR !! Ignition Off , Heartbeat , Tag In  ,Ignition On fault found in sequence of events at row 15199
+ ERROR !! Tag In , CAN Periodic , Position Report  , fault found in sequence of events at row 15309
+ ERROR !! Ignition Off , Tag In , Ignition On  ,Start Moving fault found in sequence of events at row 15517
+QC FAIL !! KWI 91/36314 has 1732 events
+QC FAIL !! KWI 91/36314 has 0 odo jumps and 14 unexpected order of events
+----------------------------------------------------------------
+Analysing events for KWI 91/38990
+QC PASS !! KWI 91/38990 has 0 events
+----------------------------------------------------------------
+Analysing events for KWI 91/7918
+ ERROR !! Tag In , Start Moving , Stop Moving  , fault found in sequence of events at row 15882
+ ERROR !! Ignition Off , Tag Out , Power Up  ,Tag In fault found in sequence of events at row 16288
+ ERROR !! Tag In , Tag Out , Heartbeat  , fault found in sequence of events at row 16702
+ ERROR !! Ignition Off , Tag In , Ignition On  ,Start Moving fault found in sequence of events at row 17035
+ ERROR !! Ignition Off , Ignition Off , Journey Summary  ,Tag Out fault found in sequence of events at row 17134
+ ERROR !! Tag In , Position Report , Start Moving  , fault found in sequence of events at row 17140
+ ERROR !! Tag In , Ignition Off , Journey Summary  , fault found in sequence of events at row 17222
+QC FAIL !! KWI 91/7918 has 1726 events
+QC FAIL !! KWI 91/7918 has 0 odo jumps and 7 unexpected order of events
+----------------------------------------------------------------
+Analysing events for KWI 95/15711
+ ERROR !! Ignition Off , Heartbeat , Tag In  ,Ignition On fault found in sequence of events at row 17596
+ ERROR !! Ignition Off , Journey Summary , Ignition On  ,Ignition Off fault found in sequence of events at row 17599
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 17685
+ ERROR !! Tag In , CAN Periodic , CAN Periodic  , fault found in sequence of events at row 18512
+QC FAIL !! KWI 95/15711 has 1308 events
+QC FAIL !! KWI 95/15711 has 0 odo jumps and 4 unexpected order of events
+----------------------------------------------------------------
+Analysing events for KWI 95/15712
+QC PASS !! KWI 95/15712 has 839 events
+----------------------------------------------------------------
+Analysing events for KWI 95/15715
+ ERROR !! Tag In , Tag Out , Tag In  , fault found in sequence of events at row 19821
+ ERROR !! Tag In , Ignition On , Geofence Exit  , fault found in sequence of events at row 19853

@@ -1,0 +1,122 @@
+Asset Event History,,,,,,,,
+Lists the event history within the specified period for the selected assets,,,,,,,,
+Report Parameters,,,,,,,,
+StartTimeFilter: 01/11/2017 08:10:00 GMT,,,,,,,,
+EndTimeFilter: 16/11/2017 08:10:00 GMT,,,,,,,,
+"SelectedEventTypes: CAN Periodic,Command Response,Digital Input 8 Off,Digital Input 8 On,Driving Duration Violation,External Power Loss,External Power Restore,Geofence Entry,Geofence Exit,Heartbeat,Idle End,Idle Start,Ignition Off,Ignition On,Journey Periodic,Journey Summary,Normal Mode On,Overspeed End,Overspeed Start,Poll Response,Position Report,Power Up,Service Mode On,Start Moving,Stop Moving,Tag In,Tag Out,Terminal Connected,Terminal Disconnected,Towing",,,,,,,,
+Timezone: GMT,,,,,,,,
+GeoReferenceSystem: Global,,,,,,,,
+Language: English,,,,,,,,
+Asset,Event,Event Type,Event Time,Position,Position URL,Odometer,Speed,Geo Reference
+AD 1/63222,,,,,,,,
+AD 1/63222,Heartbeat,Heartbeat,06/11/2017 08:00:00 GMT,"24.336599°N, 54.474300°E","24.336599°N, 54.474300°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63222,External Power Loss,External Power Loss,06/11/2017 06:02:19 GMT,"24.336399°N, 54.474201°E","24.336399°N, 54.474201°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63222,Tag Out,Tag Out,06/11/2017 06:01:55 GMT,"24.336500°N, 54.474201°E","24.336500°N, 54.474201°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63222,Journey Summary,Journey Summary,06/11/2017 06:01:31 GMT,"24.336500°N, 54.474201°E","24.336500°N, 54.474201°E",1025306,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63222,Ignition Off,Ignition Off,06/11/2017 06:01:30 GMT,"24.336500°N, 54.474201°E","24.336500°N, 54.474201°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63222,Position Report,Position Report,06/11/2017 05:49:42 GMT,"24.336500°N, 54.474201°E","24.336500°N, 54.474201°E",1025306,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63222,CAN Periodic,CAN Periodic,06/11/2017 05:49:36 GMT,"24.336500°N, 54.474201°E","24.336500°N, 54.474201°E",1025306,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63222,CAN Periodic,CAN Periodic,06/11/2017 05:34:36 GMT,"24.336399°N, 54.474201°E","24.336399°N, 54.474201°E",1025306,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63222,CAN Periodic,CAN Periodic,06/11/2017 05:19:36 GMT,"24.336399°N, 54.474201°E","24.336399°N, 54.474201°E",1025306,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63222,Power Up,Power Up,06/11/2017 05:07:22 GMT,"24.336399°N, 54.474201°E","24.336399°N, 54.474201°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE *"
+AD 1/63222,Count: 10,,Range: 01/11/2017 20:00:00 GMT to 14/11/2017 08:00:00 GMT,,,,,
+AD 1/63236,,,,,,,,
+AD 1/63236,Heartbeat,Heartbeat,12/11/2017 08:17:16 GMT,"24.336599°N, 54.474499°E","24.336599°N, 54.474499°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE *"
+AD 1/63236,Tag Out,Tag Out,05/11/2017 05:49:24 GMT,"24.336599°N, 54.474499°E","24.336599°N, 54.474499°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE *"
+AD 1/63236,Journey Summary,Journey Summary,05/11/2017 05:48:59 GMT,"24.336599°N, 54.474499°E","24.336599°N, 54.474499°E",631701,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE *"
+AD 1/63236,Idle End,Idle End,05/11/2017 05:48:59 GMT,"24.336599°N, 54.474499°E","24.336599°N, 54.474499°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE *"
+AD 1/63236,Ignition Off,Ignition Off,05/11/2017 05:48:58 GMT,"24.336599°N, 54.474499°E","24.336599°N, 54.474499°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE *"
+AD 1/63236,Idle Start,Idle Start,05/11/2017 05:34:04 GMT,"24.336599°N, 54.474499°E","24.336599°N, 54.474499°E",631701,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE *"
+AD 1/63236,CAN Periodic,CAN Periodic,05/11/2017 05:34:03 GMT,"24.336599°N, 54.474499°E","24.336599°N, 54.474499°E",631701,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE *"
+AD 1/63236,CAN Periodic,CAN Periodic,05/11/2017 05:19:03 GMT,"24.336599°N, 54.474499°E","24.336599°N, 54.474499°E",631701,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE *"
+AD 1/63236,Count: 8,,Range: 05/11/2017 05:19:03 GMT to 12/11/2017 08:17:16 GMT,,,,,
+AD 1/63430,,,,,,,,
+AD 1/63430,Heartbeat,Heartbeat,06/11/2017 08:00:00 GMT,"24.336500°N, 54.474201°E","24.336500°N, 54.474201°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63430,External Power Loss,External Power Loss,06/11/2017 06:03:45 GMT,"24.336300°N, 54.473900°E","24.336300°N, 54.473900°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63430,Tag Out,Tag Out,06/11/2017 06:03:12 GMT,"24.336300°N, 54.473900°E","24.336300°N, 54.473900°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63430,Journey Summary,Journey Summary,06/11/2017 06:02:48 GMT,"24.336300°N, 54.474300°E","24.336300°N, 54.474300°E",839671,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63430,Ignition Off,Ignition Off,06/11/2017 06:02:46 GMT,"24.336300°N, 54.474300°E","24.336300°N, 54.474300°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63430,Position Report,Position Report,06/11/2017 05:54:49 GMT,"24.336399°N, 54.474300°E","24.336399°N, 54.474300°E",839671,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63430,Position Report,Position Report,06/11/2017 05:54:39 GMT,"24.336201°N, 54.474400°E","24.336201°N, 54.474400°E",839671,,"18.2 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63430,Position Report,Position Report,06/11/2017 05:52:10 GMT,"24.336000°N, 54.474300°E","24.336000°N, 54.474300°E",839671,,"18.2 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63430,CAN Periodic,CAN Periodic,06/11/2017 05:48:21 GMT,"24.336500°N, 54.474300°E","24.336500°N, 54.474300°E",839671,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/63430,CAN Periodic,CAN Periodic,06/11/2017 05:33:21 GMT,"24.336399°N, 54.474400°E","24.336399°N, 54.474400°E",839671,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE *"
+AD 1/63430,CAN Periodic,CAN Periodic,06/11/2017 05:18:22 GMT,"24.336399°N, 54.474400°E","24.336399°N, 54.474400°E",839671,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE *"
+AD 1/63430,Power Up,Power Up,06/11/2017 05:05:47 GMT,"24.336399°N, 54.474400°E","24.336399°N, 54.474400°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE *"
+AD 1/63430,Count: 12,,Range: 06/11/2017 05:05:47 GMT to 06/11/2017 08:00:00 GMT,,,,,
+AD 1/84495,,,,,,,,
+AD 1/84495,Heartbeat,Heartbeat,14/11/2017 08:00:00 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,External Power Loss,External Power Loss,13/11/2017 20:49:12 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,13/11/2017 20:00:00 GMT,"24.337299°N, 54.474701°E","24.337299°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,13/11/2017 08:00:00 GMT,"24.337299°N, 54.474701°E","24.337299°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,12/11/2017 20:00:00 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,12/11/2017 08:00:00 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,11/11/2017 20:00:00 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,11/11/2017 08:00:00 GMT,"24.337400°N, 54.474602°E","24.337400°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Power Up,Power Up,10/11/2017 20:05:09 GMT,"24.337299°N, 54.474701°E","24.337299°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,10/11/2017 20:02:09 GMT,"24.337299°N, 54.474701°E","24.337299°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,10/11/2017 20:01:46 GMT,"24.337299°N, 54.474701°E","24.337299°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,10/11/2017 20:01:23 GMT,"24.337299°N, 54.474701°E","24.337299°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,10/11/2017 20:00:00 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,10/11/2017 08:00:00 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,09/11/2017 20:00:00 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,09/11/2017 08:00:00 GMT,"24.337400°N, 54.474701°E","24.337400°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Power Up,Power Up,09/11/2017 07:17:25 GMT,"24.337299°N, 54.474701°E","24.337299°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,08/11/2017 20:00:00 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Power Up,Power Up,08/11/2017 16:21:30 GMT,"24.337299°N, 54.474701°E","24.337299°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,08/11/2017 08:00:00 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,07/11/2017 20:00:00 GMT,"24.337299°N, 54.474701°E","24.337299°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,07/11/2017 08:00:00 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,06/11/2017 20:00:00 GMT,"24.337299°N, 54.474701°E","24.337299°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Tag Out,Tag Out,06/11/2017 10:34:32 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Ignition Off,Ignition Off,06/11/2017 10:34:07 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Ignition On,Ignition On,06/11/2017 10:33:50 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Tag In,Tag In,06/11/2017 10:33:18 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,06/11/2017 08:00:00 GMT,"24.337299°N, 54.474701°E","24.337299°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,05/11/2017 20:00:00 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,05/11/2017 08:00:00 GMT,"24.337299°N, 54.474701°E","24.337299°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,04/11/2017 20:00:00 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,04/11/2017 08:00:00 GMT,"24.337400°N, 54.474701°E","24.337400°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Power Up,Power Up,03/11/2017 20:05:21 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,03/11/2017 20:02:21 GMT,"24.337299°N, 54.474701°E","24.337299°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,03/11/2017 20:01:55 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,03/11/2017 20:01:27 GMT,"24.337299°N, 54.474701°E","24.337299°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,03/11/2017 20:00:00 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,03/11/2017 08:00:00 GMT,"24.337299°N, 54.474602°E","24.337299°N, 54.474602°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,02/11/2017 20:00:00 GMT,"24.337299°N, 54.474701°E","24.337299°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,02/11/2017 08:00:00 GMT,"24.337299°N, 54.474701°E","24.337299°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Heartbeat,Heartbeat,01/11/2017 20:00:00 GMT,"24.337299°N, 54.474701°E","24.337299°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/84495,Count: 41,,Range: 01/11/2017 20:00:00 GMT to 14/11/2017 08:00:00 GMT,,,,,
+AD 1/91351,,,,,,,,
+AD 1/91351,Heartbeat,Heartbeat,12/11/2017 08:00:00 GMT,"24.336599°N, 54.474201°E","24.336599°N, 54.474201°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,External Power Loss,External Power Loss,12/11/2017 06:00:21 GMT,"24.336700°N, 54.474400°E","24.336700°N, 54.474400°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,Tag Out,Tag Out,12/11/2017 05:37:36 GMT,"24.337000°N, 54.474701°E","24.337000°N, 54.474701°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,Journey Summary,Journey Summary,12/11/2017 05:37:11 GMT,"24.336901°N, 54.474400°E","24.336901°N, 54.474400°E",982744,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,Ignition Off,Ignition Off,12/11/2017 05:37:10 GMT,"24.336901°N, 54.474400°E","24.336901°N, 54.474400°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,CAN Periodic,CAN Periodic,12/11/2017 05:24:50 GMT,"24.336599°N, 54.474400°E","24.336599°N, 54.474400°E",982744,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,CAN Periodic,CAN Periodic,12/11/2017 05:09:50 GMT,"24.336399°N, 54.474602°E","24.336399°N, 54.474602°E",982744,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,CAN Periodic,CAN Periodic,12/11/2017 04:54:50 GMT,"24.336700°N, 54.474201°E","24.336700°N, 54.474201°E",982744,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,Power Up,Power Up,12/11/2017 04:42:24 GMT,"24.336700°N, 54.474400°E","24.336700°N, 54.474400°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE *"
+AD 1/91351,Ignition On,Ignition On,12/11/2017 04:39:52 GMT,"24.336700°N, 54.474400°E","24.336700°N, 54.474400°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE *"
+AD 1/91351,Tag In,Tag In,05/11/2017 10:07:52 GMT,"24.336700°N, 54.474400°E","24.336700°N, 54.474400°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE *"
+AD 1/91351,External Power Restore,External Power Restore,05/11/2017 10:07:48 GMT,"24.336700°N, 54.474400°E","24.336700°N, 54.474400°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE *"
+AD 1/91351,Heartbeat,Heartbeat,05/11/2017 08:00:00 GMT,"24.336700°N, 54.474400°E","24.336700°N, 54.474400°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,Command Response,Command Response,05/11/2017 06:51:22 GMT,,,0,,Unknown Location
+AD 1/91351,Power Up,Power Up,05/11/2017 06:29:12 GMT,"24.336599°N, 54.474400°E","24.336599°N, 54.474400°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,Power Up,Power Up,05/11/2017 06:08:19 GMT,"24.336800°N, 54.474201°E","24.336800°N, 54.474201°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,External Power Loss,External Power Loss,05/11/2017 05:51:33 GMT,"24.336599°N, 54.474201°E","24.336599°N, 54.474201°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,Tag Out,Tag Out,05/11/2017 05:51:02 GMT,"24.336700°N, 54.474201°E","24.336700°N, 54.474201°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,Idle End,Idle End,05/11/2017 05:50:37 GMT,"24.336800°N, 54.474300°E","24.336800°N, 54.474300°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,Journey Summary,Journey Summary,05/11/2017 05:50:37 GMT,"24.336800°N, 54.474300°E","24.336800°N, 54.474300°E",982744,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,Ignition Off,Ignition Off,05/11/2017 05:50:36 GMT,"24.336800°N, 54.474300°E","24.336800°N, 54.474300°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,CAN Periodic,CAN Periodic,05/11/2017 05:49:58 GMT,"24.336901°N, 54.474400°E","24.336901°N, 54.474400°E",982744,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,CAN Periodic,CAN Periodic,05/11/2017 05:34:58 GMT,"24.336700°N, 54.474300°E","24.336700°N, 54.474300°E",982744,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,Idle Start,Idle Start,05/11/2017 05:34:58 GMT,"24.336700°N, 54.474300°E","24.336700°N, 54.474300°E",982744,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,Position Report,Position Report,05/11/2017 05:24:56 GMT,"24.336700°N, 54.474300°E","24.336700°N, 54.474300°E",982744,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,CAN Periodic,CAN Periodic,05/11/2017 05:19:58 GMT,"24.336700°N, 54.474201°E","24.336700°N, 54.474201°E",982744,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,CAN Periodic,CAN Periodic,05/11/2017 05:04:58 GMT,"24.336599°N, 54.474300°E","24.336599°N, 54.474300°E",982744,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,CAN Periodic,CAN Periodic,05/11/2017 04:49:58 GMT,"24.336599°N, 54.474201°E","24.336599°N, 54.474201°E",982744,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE"
+AD 1/91351,Power Up,Power Up,05/11/2017 04:37:35 GMT,"24.336800°N, 54.474400°E","24.336800°N, 54.474400°E",0,,"18.1 km SE from Abu Dhabi,United Arab Emirates,AE *"
+AD 1/91351,Count: 29,,Range: 05/11/2017 04:37:35 GMT to 12/11/2017 08:00:00 GMT,,,,,
+Grand Totals,,,,,,,,
+,Count: 100,,Range: 01/11/2017 20:00:00 GMT to 14/11/2017 08:00:00 GMT,,,,,

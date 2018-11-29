@@ -1,7 +1,7 @@
 import os
 import csv
 
-requiredDir = 'C:\\QA'
+requiredDir = 'd:\\QA'
 
 
 for filename in os.listdir(requiredDir):
@@ -70,7 +70,7 @@ class asset:
         # a value of 4 means there was idling mismatches
         # a value of 8 means the vehicle is possibly on service mode or tags are not working
         # a value of 16 means journey summary not working
-        # a value of 32 means
+        # a value of 32 means ONLY HEARTBEAT , possibly lack of usage or can script not working.
         # a value of 64 means
 
         # if tag in is more than 1 and the mismatch is more than three then flag tag in mismatch error
@@ -108,7 +108,7 @@ class asset:
             if int(self.driver_behaviour) > 0:
                 self.analysis_summary += 16
 
-        # heartbeat present but no journey periodic indicates an issue with script.
+        # heartbeat present but no journey periodic indicates an issue with script or inactivity of vehicle.
         if int(self.heartbeat) > 0:
             if int(self.journey_periodic) == 0:
                 self.analysis_summary += 32
@@ -248,7 +248,7 @@ class asset:
         #     print("Perfect Tags")
 
 
-with open('EOEventCount.csv','r') as csvfile:
+with open('EOEventCount1.csv','r') as csvfile:
     reader = csv.reader(csvfile)
     rowcount=0
     total_assets=0

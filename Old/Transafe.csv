@@ -1,0 +1,862 @@
+Asset Event Count (by Type),,,
+Shows number of events per event type and asset,,,
+Report Parameters,,,
+StartTimeFilter: 01/11/2017 08:36:00 GMT,,,
+EndTimeFilter: 16/11/2017 08:36:00 GMT,,,
+Language: English,,,
+Asset,,Event Type,Occurrences
+3.53161E+14,,,
+3.53161E+14,,,
+AD 1/63222,,,
+AD 1/63222,,Heartbeat,1
+AD 1/63222,,External Power Loss,1
+AD 1/63222,,Tag Out,1
+AD 1/63222,,Journey Summary,1
+AD 1/63222,,Ignition Off,1
+AD 1/63222,,Position Report,1
+AD 1/63222,,CAN Periodic,3
+AD 1/63222,,Power Up,1
+AD 1/63222,Count: 8,,Sum: 10
+AD 1/63236,,,
+AD 1/63236,,Heartbeat,1
+AD 1/63236,,Tag Out,1
+AD 1/63236,,Idle End,1
+AD 1/63236,,Journey Summary,1
+AD 1/63236,,Ignition Off,1
+AD 1/63236,,Idle Start,1
+AD 1/63236,,CAN Periodic,2
+AD 1/63236,Count: 7,,Sum: 8
+AD 1/63430,,,
+AD 1/63430,,Heartbeat,1
+AD 1/63430,,External Power Loss,1
+AD 1/63430,,Tag Out,1
+AD 1/63430,,Journey Summary,1
+AD 1/63430,,Ignition Off,1
+AD 1/63430,,Position Report,3
+AD 1/63430,,CAN Periodic,3
+AD 1/63430,,Power Up,1
+AD 1/63430,Count: 8,,Sum: 12
+AD 1/84495,,,
+AD 1/84495,,Heartbeat,32
+AD 1/84495,,External Power Loss,1
+AD 1/84495,,Power Up,4
+AD 1/84495,,Tag Out,1
+AD 1/84495,,Ignition Off,1
+AD 1/84495,,Ignition On,1
+AD 1/84495,,Tag In,1
+AD 1/84495,Count: 7,,Sum: 41
+AD 1/91351,,,
+AD 1/91351,,Heartbeat,2
+AD 1/91351,,External Power Loss,2
+AD 1/91351,,Tag Out,2
+AD 1/91351,,Journey Summary,2
+AD 1/91351,,Ignition Off,2
+AD 1/91351,,CAN Periodic,8
+AD 1/91351,,Power Up,4
+AD 1/91351,,Ignition On,1
+AD 1/91351,,Tag In,1
+AD 1/91351,,External Power Restore,1
+AD 1/91351,,Command Response,1
+AD 1/91351,,Idle End,1
+AD 1/91351,,Idle Start,1
+AD 1/91351,,Position Report,1
+AD 1/91351,Count: 14,,Sum: 29
+DXB 13326,,,
+DXB 24609,,,
+DXB 24614,,,
+DXB 24614,,Heartbeat,36
+DXB 24614,,Power Up,6
+DXB 24614,,Tag Out,69
+DXB 24614,,Journey Summary,51
+DXB 24614,,Stop Moving,177
+DXB 24614,,Ignition Off,66
+DXB 24614,,Position Report,628
+DXB 24614,,Start Moving,177
+DXB 24614,,Ignition On,66
+DXB 24614,,Tag In,69
+DXB 24614,,Geofence Exit,10
+DXB 24614,,Geofence Entry,11
+DXB 24614,,CAN Periodic,203
+DXB 24614,,Idle End,8
+DXB 24614,,Idle Start,8
+DXB 24614,,External Power Restore,1
+DXB 24614,,External Power Loss,1
+DXB 24614,Count: 17,,Sum: 1587
+DXB 26238,,,
+DXB 26238,,Power Up,3
+DXB 26238,,Heartbeat,24
+DXB 26238,,External Power Loss,2
+DXB 26238,,Journey Summary,1
+DXB 26238,,Ignition Off,1
+DXB 26238,,Stop Moving,1
+DXB 26238,,Position Report,2
+DXB 26238,,Start Moving,1
+DXB 26238,,Ignition On,1
+DXB 26238,,External Power Restore,1
+DXB 26238,Count: 10,,Sum: 37
+DXB 26239,,,
+DXB 26239,,Heartbeat,7
+DXB 26239,,External Power Loss,1
+DXB 26239,,Power Up,1
+DXB 26239,Count: 3,,Sum: 9
+DXB 26240,,,
+DXB 26867,,,
+DXB 26867,,Heartbeat,4
+DXB 26867,,External Power Loss,1
+DXB 26867,,Tag Out,6
+DXB 26867,,Journey Summary,1
+DXB 26867,,Stop Moving,1
+DXB 26867,,Ignition Off,3
+DXB 26867,,Position Report,8
+DXB 26867,,Geofence Entry,2
+DXB 26867,,Geofence Exit,1
+DXB 26867,,Start Moving,1
+DXB 26867,,Ignition On,3
+DXB 26867,,Tag In,6
+DXB 26867,,Power Up,1
+DXB 26867,Count: 13,,Sum: 38
+DXB 26872,,,
+DXB 26872,,External Power Loss,1
+DXB 26872,,Heartbeat,19
+DXB 26872,,Power Up,3
+DXB 26872,Count: 3,,Sum: 23
+DXB 26929,,,
+DXB 26929,,Heartbeat,36
+DXB 26929,,Power Up,6
+DXB 26929,,Tag Out,5
+DXB 26929,,Journey Summary,5
+DXB 26929,,Ignition Off,5
+DXB 26929,,Stop Moving,9
+DXB 26929,,Start Moving,9
+DXB 26929,,Ignition On,5
+DXB 26929,,Tag In,5
+DXB 26929,,Position Report,34
+DXB 26929,,Geofence Entry,1
+DXB 26929,,CAN Periodic,3
+DXB 26929,Count: 12,,Sum: 123
+DXB 28579,,,
+DXB 28579,,Heartbeat,36
+DXB 28579,,Power Up,7
+DXB 28579,,Tag Out,5
+DXB 28579,,Journey Summary,5
+DXB 28579,,Ignition Off,5
+DXB 28579,,Ignition On,5
+DXB 28579,,Tag In,5
+DXB 28579,,Stop Moving,16
+DXB 28579,,Position Report,35
+DXB 28579,,Start Moving,16
+DXB 28579,,CAN Periodic,7
+DXB 28579,,Geofence Entry,7
+DXB 28579,,Geofence Exit,7
+DXB 28579,,External Power Restore,1
+DXB 28579,Count: 14,,Sum: 157
+DXB 30912,,,
+DXB 45424,,,
+DXB 45424,,Heartbeat,1
+DXB 45424,,External Power Loss,1
+DXB 45424,,Tag Out,1
+DXB 45424,,Journey Summary,1
+DXB 45424,,Ignition Off,1
+DXB 45424,,CAN Periodic,2
+DXB 45424,,Stop Moving,2
+DXB 45424,,Position Report,6
+DXB 45424,,Start Moving,2
+DXB 45424,,Power Up,1
+DXB 45424,,Geofence Entry,1
+DXB 45424,,Ignition On,1
+DXB 45424,,Tag In,1
+DXB 45424,,External Power Restore,1
+DXB 45424,Count: 14,,Sum: 22
+DXB 45539,,,
+DXB 45539,,Heartbeat,35
+DXB 45539,,Power Up,6
+DXB 45539,Count: 2,,Sum: 41
+DXB 46098,,,
+DXB 46098,,Heartbeat,31
+DXB 46098,,External Power Loss,1
+DXB 46098,,Power Up,4
+DXB 46098,Count: 3,,Sum: 36
+DXB 68459,,,
+DXB 68459,,External Power Loss,1
+DXB 68459,,Heartbeat,18
+DXB 68459,,Power Up,3
+DXB 68459,Count: 3,,Sum: 22
+DXB 69585,,,
+DXB 69585,,Heartbeat,31
+DXB 69585,,Tag Out,59
+DXB 69585,,Journey Summary,51
+DXB 69585,,Ignition Off,53
+DXB 69585,,Ignition On,52
+DXB 69585,,Tag In,58
+DXB 69585,,Stop Moving,144
+DXB 69585,,Position Report,410
+DXB 69585,,Geofence Entry,249
+DXB 69585,,CAN Periodic,362
+DXB 69585,,Start Moving,144
+DXB 69585,,Geofence Exit,246
+DXB 69585,,Command Response,4
+DXB 69585,,Driving Duration Violation,3
+DXB 69585,,Power Up,7
+DXB 69585,,External Power Restore,3
+DXB 69585,,External Power Loss,3
+DXB 69585,,Idle End,1
+DXB 69585,,Idle Start,1
+DXB 69585,Count: 19,,Sum: 1881
+DXB 70487,,,
+DXB 70506,,,
+DXB 70506,,Heartbeat,37
+DXB 70506,,Power Up,6
+DXB 70506,,Tag Out,48
+DXB 70506,,Journey Summary,41
+DXB 70506,,Stop Moving,52
+DXB 70506,,Ignition Off,44
+DXB 70506,,Geofence Entry,6
+DXB 70506,,Position Report,67
+DXB 70506,,Start Moving,52
+DXB 70506,,Ignition On,44
+DXB 70506,,Tag In,48
+DXB 70506,,CAN Periodic,18
+DXB 70506,,Geofence Exit,4
+DXB 70506,,External Power Restore,2
+DXB 70506,,External Power Loss,1
+DXB 70506,Count: 15,,Sum: 470
+DXB 71995,,,
+DXB 71995,,External Power Loss,5
+DXB 71995,,Tag Out,6
+DXB 71995,,Journey Summary,8
+DXB 71995,,Ignition Off,8
+DXB 71995,,CAN Periodic,26
+DXB 71995,,Stop Moving,33
+DXB 71995,,Position Report,95
+DXB 71995,,Start Moving,33
+DXB 71995,,Ignition On,8
+DXB 71995,,Tag In,6
+DXB 71995,,Geofence Exit,9
+DXB 71995,,Geofence Entry,11
+DXB 71995,,Heartbeat,23
+DXB 71995,,Power Up,5
+DXB 71995,,External Power Restore,4
+DXB 71995,Count: 15,,Sum: 280
+DXB 74386,,,
+DXB 75389,,,
+DXB 75389,,Stop Moving,66
+DXB 75389,,Start Moving,65
+DXB 75389,,Position Report,242
+DXB 75389,,CAN Periodic,125
+DXB 75389,,Idle End,4
+DXB 75389,,Heartbeat,15
+DXB 75389,,Idle Start,4
+DXB 75389,,Geofence Exit,21
+DXB 75389,,Geofence Entry,21
+DXB 75389,,Ignition On,15
+DXB 75389,,Tag In,15
+DXB 75389,,Power Up,4
+DXB 75389,,External Power Restore,4
+DXB 75389,,External Power Loss,4
+DXB 75389,,Tag Out,15
+DXB 75389,,Journey Summary,15
+DXB 75389,,Ignition Off,15
+DXB 75389,Count: 17,,Sum: 650
+DXB 75390,,,
+DXB 75390,,Heartbeat,18
+DXB 75390,,External Power Loss,8
+DXB 75390,,Tag Out,17
+DXB 75390,,Journey Summary,14
+DXB 75390,,Ignition Off,13
+DXB 75390,,CAN Periodic,79
+DXB 75390,,Position Report,31
+DXB 75390,,Ignition On,13
+DXB 75390,,Tag In,16
+DXB 75390,,Power Up,7
+DXB 75390,,Idle End,1
+DXB 75390,,Idle Start,1
+DXB 75390,,Geofence Entry,2
+DXB 75390,,External Power Restore,6
+DXB 75390,,Stop Moving,7
+DXB 75390,,Start Moving,7
+DXB 75390,Count: 16,,Sum: 240
+DXB 75391,,,
+DXB 75391,,Heartbeat,18
+DXB 75391,,External Power Loss,2
+DXB 75391,,Power Up,4
+DXB 75391,,Tag Out,7
+DXB 75391,,Journey Summary,7
+DXB 75391,,Stop Moving,9
+DXB 75391,,Ignition Off,7
+DXB 75391,,CAN Periodic,1
+DXB 75391,,Position Report,22
+DXB 75391,,Geofence Entry,1
+DXB 75391,,Start Moving,8
+DXB 75391,,Ignition On,7
+DXB 75391,,Tag In,7
+DXB 75391,,External Power Restore,1
+DXB 75391,Count: 14,,Sum: 101
+DXB 75392,,,
+DXB 75392,,Heartbeat,24
+DXB 75392,,Tag Out,29
+DXB 75392,,Journey Summary,19
+DXB 75392,,Ignition Off,21
+DXB 75392,,Position Report,37
+DXB 75392,,Ignition On,21
+DXB 75392,,Tag In,30
+DXB 75392,,External Power Restore,7
+DXB 75392,,External Power Loss,7
+DXB 75392,,CAN Periodic,4
+DXB 75392,,Power Up,8
+DXB 75392,Count: 11,,Sum: 207
+DXB 76223,,,
+DXB 76223,,Heartbeat,23
+DXB 76223,,Tag Out,23
+DXB 76223,,Journey Summary,22
+DXB 76223,,Ignition Off,24
+DXB 76223,,Stop Moving,151
+DXB 76223,,Position Report,126
+DXB 76223,,Geofence Entry,22
+DXB 76223,,Start Moving,151
+DXB 76223,,CAN Periodic,213
+DXB 76223,,Ignition On,24
+DXB 76223,,Tag In,23
+DXB 76223,,Geofence Exit,21
+DXB 76223,,Idle End,4
+DXB 76223,,Idle Start,4
+DXB 76223,,Command Response,10
+DXB 76223,,Power Up,6
+DXB 76223,,Poll Response,2
+DXB 76223,Count: 17,,Sum: 849
+DXB 77165,,,
+DXB 77165,,Heartbeat,24
+DXB 77165,,Tag Out,21
+DXB 77165,,Journey Summary,20
+DXB 77165,,Ignition Off,21
+DXB 77165,,Stop Moving,50
+DXB 77165,,Start Moving,50
+DXB 77165,,Ignition On,21
+DXB 77165,,Tag In,21
+DXB 77165,,Position Report,10
+DXB 77165,,Geofence Entry,1
+DXB 77165,,CAN Periodic,23
+DXB 77165,,Power Up,5
+DXB 77165,,External Power Restore,4
+DXB 77165,,External Power Loss,4
+DXB 77165,Count: 14,,Sum: 275
+DXB 77175,,,
+DXB 77865,,,
+DXB 77865,,External Power Loss,1
+DXB 77865,,Tag Out,2
+DXB 77865,,Journey Summary,2
+DXB 77865,,Ignition Off,2
+DXB 77865,,Heartbeat,1
+DXB 77865,,Ignition On,1
+DXB 77865,,Tag In,1
+DXB 77865,,Power Up,1
+DXB 77865,,Geofence Entry,1
+DXB 77865,Count: 9,,Sum: 12
+DXB 79121,,,
+DXB 79121,,External Power Loss,2
+DXB 79121,,Tag Out,14
+DXB 79121,,Journey Summary,13
+DXB 79121,,Ignition Off,15
+DXB 79121,,Geofence Exit,9
+DXB 79121,,Geofence Entry,10
+DXB 79121,,Stop Moving,29
+DXB 79121,,Position Report,99
+DXB 79121,,CAN Periodic,26
+DXB 79121,,Start Moving,29
+DXB 79121,,Heartbeat,6
+DXB 79121,,Ignition On,14
+DXB 79121,,Tag In,13
+DXB 79121,,Idle End,2
+DXB 79121,,Idle Start,2
+DXB 79121,,Power Up,4
+DXB 79121,,External Power Restore,1
+DXB 79121,Count: 17,,Sum: 288
+DXB 80205,,,
+DXB 84918,,,
+DXB 84918,,Heartbeat,36
+DXB 84918,,Power Up,3
+DXB 84918,,Tag Out,2
+DXB 84918,,Journey Summary,2
+DXB 84918,,Ignition Off,2
+DXB 84918,,Ignition On,2
+DXB 84918,,Tag In,2
+DXB 84918,,CAN Periodic,13
+DXB 84918,,Stop Moving,8
+DXB 84918,,Position Report,23
+DXB 84918,,Start Moving,8
+DXB 84918,,Geofence Exit,3
+DXB 84918,,Geofence Entry,3
+DXB 84918,Count: 13,,Sum: 107
+DXB 84986,,,
+DXB 84986,,Heartbeat,36
+DXB 84986,,Power Up,4
+DXB 84986,,Tag Out,40
+DXB 84986,,Stop Moving,125
+DXB 84986,,Journey Summary,40
+DXB 84986,,Ignition Off,40
+DXB 84986,,Position Report,240
+DXB 84986,,Start Moving,124
+DXB 84986,,Ignition On,40
+DXB 84986,,Tag In,39
+DXB 84986,,CAN Periodic,299
+DXB 84986,,Geofence Entry,42
+DXB 84986,,Geofence Exit,40
+DXB 84986,,Idle End,4
+DXB 84986,,Idle Start,4
+DXB 84986,Count: 15,,Sum: 1117
+DXB 87506,,,
+DXB 87506,,Power Up,4
+DXB 87506,,Heartbeat,80
+DXB 87506,,External Power Loss,1
+DXB 87506,Count: 3,,Sum: 85
+DXB 90958,,,
+DXB 96867,,,
+DXB 96867,,Heartbeat,3
+DXB 96867,,External Power Loss,16
+DXB 96867,,Tag Out,32
+DXB 96867,,Journey Summary,17
+DXB 96867,,Stop Moving,65
+DXB 96867,,Ignition Off,18
+DXB 96867,,Position Report,160
+DXB 96867,,Geofence Entry,28
+DXB 96867,,Geofence Exit,20
+DXB 96867,,Start Moving,65
+DXB 96867,,Tag In,31
+DXB 96867,,Ignition On,19
+DXB 96867,,External Power Restore,15
+DXB 96867,,CAN Periodic,36
+DXB 96867,,Power Up,12
+DXB 96867,Count: 15,,Sum: 537
+DXB 98028,,,
+DXB 98028,,Heartbeat,21
+DXB 98028,,External Power Loss,1
+DXB 98028,,Power Up,1
+DXB 98028,Count: 3,,Sum: 23
+DXB 98031,,,
+KW-91/35939,,,
+KW-91/35939,,Heartbeat,36
+KW-91/35939,,Tag Out,34
+KW-91/35939,,Journey Summary,33
+KW-91/35939,,Ignition Off,36
+KW-91/35939,,CAN Periodic,228
+KW-91/35939,,Stop Moving,219
+KW-91/35939,,Position Report,559
+KW-91/35939,,Start Moving,219
+KW-91/35939,,Ignition On,34
+KW-91/35939,,Tag In,33
+KW-91/35939,,Geofence Exit,33
+KW-91/35939,,Geofence Entry,32
+KW-91/35939,,Power Up,4
+KW-91/35939,,Idle End,2
+KW-91/35939,,Idle Start,2
+KW-91/35939,Count: 15,,Sum: 1504
+KW-91/39076,,,
+KW-91/39076,,Heartbeat,32
+KW-91/39076,,Power Up,4
+KW-91/39076,,Tag Out,3
+KW-91/39076,,Tag In,3
+KW-91/39076,,External Power Restore,1
+KW-91/39076,,External Power Loss,1
+KW-91/39076,Count: 6,,Sum: 44
+KW-95/15713,,,
+KW-95/15713,,Heartbeat,33
+KW-95/15713,,Journey Summary,43
+KW-95/15713,,Stop Moving,264
+KW-95/15713,,Ignition Off,46
+KW-95/15713,,Position Report,920
+KW-95/15713,,Start Moving,264
+KW-95/15713,,Ignition On,48
+KW-95/15713,,Tag Out,48
+KW-95/15713,,CAN Periodic,303
+KW-95/15713,,Tag In,48
+KW-95/15713,,Geofence Exit,30
+KW-95/15713,,Geofence Entry,30
+KW-95/15713,,Idle End,6
+KW-95/15713,,Idle Start,6
+KW-95/15713,,Driving Duration Violation,1
+KW-95/15713,,Power Up,6
+KW-95/15713,,External Power Restore,1
+KW-95/15713,,External Power Loss,1
+KW-95/15713,Count: 18,,Sum: 2098
+KW-95/15714,,,
+KW-95/15714,,CAN Periodic,281
+KW-95/15714,,Heartbeat,36
+KW-95/15714,,Tag Out,58
+KW-95/15714,,Ignition On,61
+KW-95/15714,,Journey Summary,57
+KW-95/15714,,Ignition Off,59
+KW-95/15714,,Stop Moving,233
+KW-95/15714,,Position Report,425
+KW-95/15714,,Start Moving,233
+KW-95/15714,,Tag In,58
+KW-95/15714,,Driving Duration Violation,3
+KW-95/15714,,Geofence Exit,40
+KW-95/15714,,Geofence Entry,40
+KW-95/15714,,Overspeed End,1
+KW-95/15714,,Overspeed Start,1
+KW-95/15714,,Power Up,3
+KW-95/15714,,Idle End,3
+KW-95/15714,,Idle Start,3
+KW-95/15714,Count: 18,,Sum: 1595
+KWI 91-35940,,,
+KWI 91/36314,,,
+KWI 91/36314,,Heartbeat,36
+KWI 91/36314,,Tag Out,54
+KWI 91/36314,,Journey Summary,51
+KWI 91/36314,,Stop Moving,186
+KWI 91/36314,,Ignition Off,54
+KWI 91/36314,,Position Report,457
+KWI 91/36314,,CAN Periodic,254
+KWI 91/36314,,Start Moving,185
+KWI 91/36314,,Ignition On,54
+KWI 91/36314,,Tag In,54
+KWI 91/36314,,Power Up,4
+KWI 91/36314,,Geofence Exit,23
+KWI 91/36314,,Geofence Entry,23
+KWI 91/36314,,Overspeed End,1
+KWI 91/36314,,Overspeed Start,1
+KWI 91/36314,,Driving Duration Violation,1
+KWI 91/36314,,Idle End,3
+KWI 91/36314,,Idle Start,3
+KWI 91/36314,Count: 18,,Sum: 1444
+KWI 91/38990,,,
+KWI 91/38990,,Heartbeat,36
+KWI 91/38990,,Ignition Off,40
+KWI 91/38990,,Ignition On,39
+KWI 91/38990,,Journey Summary,39
+KWI 91/38990,,Stop Moving,130
+KWI 91/38990,,Position Report,218
+KWI 91/38990,,Start Moving,129
+KWI 91/38990,,CAN Periodic,253
+KWI 91/38990,,Driving Duration Violation,1
+KWI 91/38990,,Geofence Exit,27
+KWI 91/38990,,Geofence Entry,27
+KWI 91/38990,,Power Up,3
+KWI 91/38990,,Idle End,2
+KWI 91/38990,,Idle Start,2
+KWI 91/38990,,Overspeed End,2
+KWI 91/38990,,Overspeed Start,2
+KWI 91/38990,,Tag Out,1
+KWI 91/38990,,Tag In,1
+KWI 91/38990,Count: 18,,Sum: 952
+KWI 91/7918,,,
+KWI 91/7918,,Ignition On,38
+KWI 91/7918,,Tag In,37
+KWI 91/7918,,Heartbeat,35
+KWI 91/7918,,Tag Out,37
+KWI 91/7918,,Journey Summary,35
+KWI 91/7918,,Stop Moving,168
+KWI 91/7918,,Ignition Off,35
+KWI 91/7918,,Position Report,312
+KWI 91/7918,,Start Moving,168
+KWI 91/7918,,CAN Periodic,294
+KWI 91/7918,,Power Up,4
+KWI 91/7918,,Driving Duration Violation,1
+KWI 91/7918,,Geofence Exit,40
+KWI 91/7918,,Geofence Entry,40
+KWI 91/7918,,Idle End,4
+KWI 91/7918,,Idle Start,4
+KWI 91/7918,Count: 16,,Sum: 1252
+KWI 95/15711,,,
+KWI 95/15711,,Heartbeat,36
+KWI 95/15711,,Power Up,5
+KWI 95/15711,,Tag Out,5
+KWI 95/15711,,Stop Moving,12
+KWI 95/15711,,Journey Summary,10
+KWI 95/15711,,Ignition Off,11
+KWI 95/15711,,Position Report,39
+KWI 95/15711,,Start Moving,12
+KWI 95/15711,,CAN Periodic,14
+KWI 95/15711,,Ignition On,11
+KWI 95/15711,,Tag In,5
+KWI 95/15711,Count: 11,,Sum: 160
+KWI 95/15712,,,
+KWI 95/15712,,Heartbeat,36
+KWI 95/15712,,Power Up,5
+KWI 95/15712,,Tag Out,28
+KWI 95/15712,,Journey Summary,28
+KWI 95/15712,,Ignition Off,29
+KWI 95/15712,,Ignition On,29
+KWI 95/15712,,Tag In,27
+KWI 95/15712,,Stop Moving,95
+KWI 95/15712,,Position Report,196
+KWI 95/15712,,CAN Periodic,182
+KWI 95/15712,,Start Moving,94
+KWI 95/15712,,Geofence Exit,37
+KWI 95/15712,,Geofence Entry,38
+KWI 95/15712,,Driving Duration Violation,2
+KWI 95/15712,Count: 14,,Sum: 826
+KWI 95/15715,,,
+KWI 95/15715,,Heartbeat,35
+KWI 95/15715,,Power Up,6
+KWI 95/15715,,Tag Out,57
+KWI 95/15715,,Journey Summary,56
+KWI 95/15715,,Stop Moving,173
+KWI 95/15715,,Ignition Off,56
+KWI 95/15715,,Position Report,445
+KWI 95/15715,,CAN Periodic,415
+KWI 95/15715,,Start Moving,173
+KWI 95/15715,,Ignition On,58
+KWI 95/15715,,Tag In,57
+KWI 95/15715,,Geofence Exit,51
+KWI 95/15715,,Geofence Entry,51
+KWI 95/15715,,Idle End,10
+KWI 95/15715,,Idle Start,10
+KWI 95/15715,,Driving Duration Violation,2
+KWI 95/15715,Count: 16,,Sum: 1655
+QAT 144029,,,
+QAT 144029,,CAN Periodic,288
+QAT 144029,,Position Report,721
+QAT 144029,,Heartbeat,36
+QAT 144029,,Start Moving,205
+QAT 144029,,Stop Moving,204
+QAT 144029,,Ignition On,68
+QAT 144029,,Tag In,66
+QAT 144029,,Tag Out,65
+QAT 144029,,Journey Summary,63
+QAT 144029,,Ignition Off,65
+QAT 144029,,Power Up,6
+QAT 144029,,Driving Duration Violation,10
+QAT 144029,,External Power Restore,2
+QAT 144029,,External Power Loss,2
+QAT 144029,Count: 14,,Sum: 1801
+QAT 144143,,,
+QAT 144143,,Heartbeat,35
+QAT 144143,,Tag Out,94
+QAT 144143,,Journey Summary,92
+QAT 144143,,Stop Moving,315
+QAT 144143,,Ignition Off,97
+QAT 144143,,Position Report,1335
+QAT 144143,,Start Moving,315
+QAT 144143,,Ignition On,96
+QAT 144143,,Tag In,93
+QAT 144143,,CAN Periodic,558
+QAT 144143,,Power Up,4
+QAT 144143,,Idle End,3
+QAT 144143,,Idle Start,3
+QAT 144143,Count: 13,,Sum: 3040
+QAT 144275,,,
+QAT 144275,,Stop Moving,279
+QAT 144275,,Position Report,1058
+QAT 144275,,Start Moving,279
+QAT 144275,,CAN Periodic,726
+QAT 144275,,Heartbeat,35
+QAT 144275,,Tag In,47
+QAT 144275,,Ignition On,54
+QAT 144275,,Tag Out,46
+QAT 144275,,Journey Summary,47
+QAT 144275,,Ignition Off,52
+QAT 144275,,Power Up,4
+QAT 144275,,Idle End,12
+QAT 144275,,Idle Start,12
+QAT 144275,Count: 13,,Sum: 2651
+QAT 144309,,,
+QAT 144309,,Position Report,1283
+QAT 144309,,CAN Periodic,867
+QAT 144309,,Heartbeat,36
+QAT 144309,,Start Moving,281
+QAT 144309,,Stop Moving,281
+QAT 144309,,Ignition On,86
+QAT 144309,,Tag In,64
+QAT 144309,,Tag Out,64
+QAT 144309,,Journey Summary,60
+QAT 144309,,Ignition Off,68
+QAT 144309,,Power Up,22
+QAT 144309,,Idle End,14
+QAT 144309,,Idle Start,16
+QAT 144309,,External Power Restore,1
+QAT 144309,,External Power Loss,1
+QAT 144309,Count: 15,,Sum: 3144
+QAT 214082,,,
+QAT 214082,,Heartbeat,30
+QAT 214082,,Tag Out,66
+QAT 214082,,Journey Summary,56
+QAT 214082,,Ignition Off,64
+QAT 214082,,CAN Periodic,199
+QAT 214082,,Stop Moving,124
+QAT 214082,,Position Report,514
+QAT 214082,,Start Moving,124
+QAT 214082,,Ignition On,64
+QAT 214082,,Tag In,66
+QAT 214082,,Power Up,6
+QAT 214082,,External Power Restore,6
+QAT 214082,,External Power Loss,6
+QAT 214082,,Idle End,1
+QAT 214082,,Idle Start,1
+QAT 214082,Count: 15,,Sum: 1327
+QAT 217258,,,
+QAT 217258,,Heartbeat,36
+QAT 217258,,Tag Out,29
+QAT 217258,,Journey Summary,28
+QAT 217258,,Stop Moving,138
+QAT 217258,,Ignition Off,28
+QAT 217258,,CAN Periodic,272
+QAT 217258,,Position Report,769
+QAT 217258,,Start Moving,138
+QAT 217258,,Ignition On,29
+QAT 217258,,Tag In,29
+QAT 217258,,Power Up,4
+QAT 217258,Count: 11,,Sum: 1500
+QAT 217324,,,
+QAT 217324,,CAN Periodic,400
+QAT 217324,,Position Report,1530
+QAT 217324,,Start Moving,349
+QAT 217324,,Stop Moving,349
+QAT 217324,,Heartbeat,35
+QAT 217324,,Ignition On,32
+QAT 217324,,Tag In,32
+QAT 217324,,Tag Out,32
+QAT 217324,,Journey Summary,31
+QAT 217324,,Ignition Off,31
+QAT 217324,,Power Up,4
+QAT 217324,,Idle End,3
+QAT 217324,,Idle Start,3
+QAT 217324,Count: 13,,Sum: 2831
+QAT 217992,,,
+QAT 217992,,Heartbeat,34
+QAT 217992,,Tag Out,42
+QAT 217992,,Journey Summary,36
+QAT 217992,,Ignition Off,40
+QAT 217992,,Stop Moving,231
+QAT 217992,,Position Report,842
+QAT 217992,,CAN Periodic,288
+QAT 217992,,Start Moving,231
+QAT 217992,,Ignition On,41
+QAT 217992,,Tag In,42
+QAT 217992,,Idle End,3
+QAT 217992,,Idle Start,3
+QAT 217992,,Power Up,4
+QAT 217992,Count: 13,,Sum: 1837
+QAT 228016,,,
+QAT 228016,,Heartbeat,33
+QAT 228016,,Tag Out,41
+QAT 228016,,Journey Summary,39
+QAT 228016,,Stop Moving,179
+QAT 228016,,Ignition Off,39
+QAT 228016,,Position Report,881
+QAT 228016,,Start Moving,179
+QAT 228016,,CAN Periodic,315
+QAT 228016,,Ignition On,40
+QAT 228016,,Tag In,41
+QAT 228016,,Power Up,4
+QAT 228016,,Idle End,3
+QAT 228016,,Idle Start,3
+QAT 228016,Count: 13,,Sum: 1797
+QAT 228054,,,
+QAT 228054,,CAN Periodic,361
+QAT 228054,,Position Report,930
+QAT 228054,,Start Moving,168
+QAT 228054,,Heartbeat,34
+QAT 228054,,Stop Moving,167
+QAT 228054,,Ignition On,30
+QAT 228054,,Tag In,27
+QAT 228054,,Tag Out,26
+QAT 228054,,Journey Summary,26
+QAT 228054,,Ignition Off,28
+QAT 228054,,Power Up,4
+QAT 228054,,Idle End,6
+QAT 228054,,Idle Start,6
+QAT 228054,Count: 13,,Sum: 1813
+QAT 228461,,,
+QAT 228461,,CAN Periodic,562
+QAT 228461,,Position Report,1317
+QAT 228461,,Start Moving,282
+QAT 228461,,Stop Moving,281
+QAT 228461,,Heartbeat,34
+QAT 228461,,Ignition On,20
+QAT 228461,,Tag In,24
+QAT 228461,,Tag Out,23
+QAT 228461,,Journey Summary,19
+QAT 228461,,Ignition Off,19
+QAT 228461,,Overspeed End,9
+QAT 228461,,Overspeed Start,9
+QAT 228461,,Power Up,3
+QAT 228461,,Idle End,3
+QAT 228461,,Idle Start,3
+QAT 228461,Count: 15,,Sum: 2608
+QAT 252183,,,
+QAT 252183,,Stop Moving,272
+QAT 252183,,CAN Periodic,817
+QAT 252183,,Position Report,1145
+QAT 252183,,Start Moving,271
+QAT 252183,,Heartbeat,35
+QAT 252183,,Idle End,15
+QAT 252183,,Idle Start,15
+QAT 252183,,Ignition On,46
+QAT 252183,,Tag In,59
+QAT 252183,,Tag Out,59
+QAT 252183,,Journey Summary,45
+QAT 252183,,Ignition Off,46
+QAT 252183,,External Power Restore,11
+QAT 252183,,External Power Loss,11
+QAT 252183,,Overspeed End,1
+QAT 252183,,Overspeed Start,1
+QAT 252183,,Power Up,3
+QAT 252183,Count: 17,,Sum: 2852
+QAT 45413,,,
+QAT 45413,,Journey Summary,37
+QAT 45413,,Stop Moving,302
+QAT 45413,,Ignition Off,38
+QAT 45413,,Position Report,1286
+QAT 45413,,CAN Periodic,309
+QAT 45413,,Start Moving,302
+QAT 45413,,Heartbeat,33
+QAT 45413,,Ignition On,38
+QAT 45413,,Tag In,38
+QAT 45413,,Tag Out,38
+QAT 45413,,Power Up,4
+QAT 45413,,Idle End,4
+QAT 45413,,Idle Start,4
+QAT 45413,Count: 13,,Sum: 2433
+QAT 45415,,,
+QAT 45415,,Heartbeat,36
+QAT 45415,,Tag Out,30
+QAT 45415,,Journey Summary,31
+QAT 45415,,Ignition Off,31
+QAT 45415,,CAN Periodic,201
+QAT 45415,,Stop Moving,122
+QAT 45415,,Position Report,492
+QAT 45415,,Start Moving,122
+QAT 45415,,Idle End,1
+QAT 45415,,Idle Start,1
+QAT 45415,,Ignition On,32
+QAT 45415,,Tag In,30
+QAT 45415,,Power Up,3
+QAT 45415,Count: 13,,Sum: 1132
+QAT 45424,,,
+QAT 45424,,External Power Loss,9
+QAT 45424,,Tag Out,32
+QAT 45424,,Journey Summary,31
+QAT 45424,,Stop Moving,120
+QAT 45424,,Ignition Off,31
+QAT 45424,,Position Report,536
+QAT 45424,,Start Moving,120
+QAT 45424,,CAN Periodic,279
+QAT 45424,,Heartbeat,16
+QAT 45424,,Power Up,7
+QAT 45424,,Ignition On,30
+QAT 45424,,Tag In,31
+QAT 45424,,External Power Restore,8
+QAT 45424,,Idle End,1
+QAT 45424,,Idle Start,1
+QAT 45424,Count: 15,,Sum: 1252
+QAT-144476,,,
+QAT-144476,,Position Report,1164
+QAT-144476,,Start Moving,292
+QAT-144476,,CAN Periodic,421
+QAT-144476,,Stop Moving,291
+QAT-144476,,Heartbeat,36
+QAT-144476,,Ignition On,115
+QAT-144476,,Journey Summary,112
+QAT-144476,,Ignition Off,114
+QAT-144476,,Power Up,11
+QAT-144476,,External Power Restore,20
+QAT-144476,,External Power Loss,20
+QAT-144476,,Tag Out,37
+QAT-144476,,Tag In,36
+QAT-144476,,Driving Duration Violation,1
+QAT-144476,,Idle End,1
+QAT-144476,,Idle Start,1
+QAT-144476,Count: 16,,Sum: 2672
+RW-Test,,,
+Grand Totals,,,
+,Count: 723,,Sum: 55537

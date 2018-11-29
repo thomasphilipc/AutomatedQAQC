@@ -1,0 +1,233 @@
+Analysing events for AD 1/63222
+QC PASS !! AD 1/63222 has 27 events
+----------------------------------------------------------------
+Analysing events for AD 1/63236
+QC PASS !! AD 1/63236 has 17 events
+----------------------------------------------------------------
+Analysing events for AD 1/63430
+QC PASS !! AD 1/63430 has 16 events
+----------------------------------------------------------------
+Analysing events for AD 1/84495
+QC PASS !! AD 1/84495 has 0 events
+----------------------------------------------------------------
+Analysing events for AD 1/91351
+QC PASS !! AD 1/91351 has 17 events
+----------------------------------------------------------------
+Analysing events for DXB 13326
+QC PASS !! DXB 13326 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 24609
+QC PASS !! DXB 24609 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 24614
+QC PASS !! DXB 24614 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 26238
+QC PASS !! DXB 26238 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 26239
+QC PASS !! DXB 26239 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 26240
+QC PASS !! DXB 26240 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 26867
+QC PASS !! DXB 26867 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 26872
+QC PASS !! DXB 26872 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 26929
+QC PASS !! DXB 26929 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 28579
+QC PASS !! DXB 28579 has 14 events
+----------------------------------------------------------------
+Analysing events for DXB 30912
+QC PASS !! DXB 30912 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 45424
+QC PASS !! DXB 45424 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 45539
+QC PASS !! DXB 45539 has 16 events
+----------------------------------------------------------------
+Analysing events for DXB 46098
+QC PASS !! DXB 46098 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 68459
+QC PASS !! DXB 68459 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 69585
+QC FAIL !! DXB 69585 has 288 events
+QC FAIL !! DXB 69585 has 0 odo jumps and 2 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 70487
+QC FAIL !! DXB 70487 has 10 events
+QC FAIL !! DXB 70487 has 0 odo jumps and 1 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 70506
+QC FAIL !! DXB 70506 has 109 events
+QC FAIL !! DXB 70506 has 0 odo jumps and 1 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 71995
+QC FAIL !! DXB 71995 has 20 events
+QC FAIL !! DXB 71995 has 0 odo jumps and 1 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 74386
+QC PASS !! DXB 74386 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 75389
+QC PASS !! DXB 75389 has 428 events
+----------------------------------------------------------------
+Analysing events for DXB 75390
+QC FAIL !! DXB 75390 has 117 events
+QC FAIL !! DXB 75390 has 0 odo jumps and 2 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 75391
+QC PASS !! DXB 75391 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 75392
+QC PASS !! DXB 75392 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 76223
+QC PASS !! DXB 76223 has 16 events
+----------------------------------------------------------------
+Analysing events for DXB 77165
+QC FAIL !! DXB 77165 has 172 events
+QC FAIL !! DXB 77165 has 0 odo jumps and 1 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 77175
+QC PASS !! DXB 77175 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 77865
+QC PASS !! DXB 77865 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 79121
+QC PASS !! DXB 79121 has 162 events
+----------------------------------------------------------------
+Analysing events for DXB 80205
+QC PASS !! DXB 80205 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 84918
+QC FAIL !! DXB 84918 has 32 events
+QC FAIL !! DXB 84918 has 1 odo jumps and 0 unexpected order of events
+----------------------------------------------------------------
+Analysing events for DXB 84986
+QC PASS !! DXB 84986 has 14 events
+----------------------------------------------------------------
+Analysing events for DXB 87506
+QC PASS !! DXB 87506 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 90958
+QC PASS !! DXB 90958 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 96867
+QC PASS !! DXB 96867 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 98028
+QC PASS !! DXB 98028 has 0 events
+----------------------------------------------------------------
+Analysing events for DXB 98031
+QC PASS !! DXB 98031 has 0 events
+----------------------------------------------------------------
+Analysing events for KW-91/35939
+QC PASS !! KW-91/35939 has 589 events
+----------------------------------------------------------------
+Analysing events for KW-91/39076
+QC FAIL !! KW-91/39076 has 688 events
+QC FAIL !! KW-91/39076 has 0 odo jumps and 9 unexpected order of events
+----------------------------------------------------------------
+Analysing events for KW-95/15713
+QC FAIL !! KW-95/15713 has 871 events
+QC FAIL !! KW-95/15713 has 0 odo jumps and 2 unexpected order of events
+----------------------------------------------------------------
+Analysing events for KW-95/15714
+QC PASS !! KW-95/15714 has 523 events
+----------------------------------------------------------------
+Analysing events for KWI 91-35940
+QC FAIL !! KWI 91-35940 has 44 events
+QC FAIL !! KWI 91-35940 has 0 odo jumps and 2 unexpected order of events
+----------------------------------------------------------------
+Analysing events for KWI 91/36314
+QC FAIL !! KWI 91/36314 has 906 events
+QC FAIL !! KWI 91/36314 has 0 odo jumps and 11 unexpected order of events
+----------------------------------------------------------------
+Analysing events for KWI 91/38990
+QC PASS !! KWI 91/38990 has 0 events
+----------------------------------------------------------------
+Analysing events for KWI 91/7918
+QC FAIL !! KWI 91/7918 has 645 events
+QC FAIL !! KWI 91/7918 has 0 odo jumps and 5 unexpected order of events
+----------------------------------------------------------------
+Analysing events for KWI 95/15711
+QC FAIL !! KWI 95/15711 has 402 events
+QC FAIL !! KWI 95/15711 has 0 odo jumps and 1 unexpected order of events
+----------------------------------------------------------------
+Analysing events for KWI 95/15712
+QC PASS !! KWI 95/15712 has 163 events
+----------------------------------------------------------------
+Analysing events for KWI 95/15715
+QC FAIL !! KWI 95/15715 has 235 events
+QC FAIL !! KWI 95/15715 has 0 odo jumps and 2 unexpected order of events
+----------------------------------------------------------------
+Analysing events for QAT 144029
+QC FAIL !! QAT 144029 has 533 events
+QC FAIL !! QAT 144029 has 0 odo jumps and 1 unexpected order of events
+----------------------------------------------------------------
+Analysing events for QAT 144143
+QC FAIL !! QAT 144143 has 915 events
+QC FAIL !! QAT 144143 has 0 odo jumps and 2 unexpected order of events
+----------------------------------------------------------------
+Analysing events for QAT 144275
+QC FAIL !! QAT 144275 has 1058 events
+QC FAIL !! QAT 144275 has 0 odo jumps and 6 unexpected order of events
+----------------------------------------------------------------
+Analysing events for QAT 144309
+QC FAIL !! QAT 144309 has 945 events
+QC FAIL !! QAT 144309 has 0 odo jumps and 9 unexpected order of events
+----------------------------------------------------------------
+Analysing events for QAT 214082
+QC FAIL !! QAT 214082 has 242 events
+QC FAIL !! QAT 214082 has 0 odo jumps and 1 unexpected order of events
+----------------------------------------------------------------
+Analysing events for QAT 217258
+QC FAIL !! QAT 217258 has 30 events
+QC FAIL !! QAT 217258 has 0 odo jumps and 8 unexpected order of events
+----------------------------------------------------------------
+Analysing events for QAT 217324
+QC FAIL !! QAT 217324 has 84 events
+QC FAIL !! QAT 217324 has 0 odo jumps and 5 unexpected order of events
+----------------------------------------------------------------
+Analysing events for QAT 217992
+QC FAIL !! QAT 217992 has 269 events
+QC FAIL !! QAT 217992 has 0 odo jumps and 3 unexpected order of events
+----------------------------------------------------------------
+Analysing events for QAT 228016
+QC FAIL !! QAT 228016 has 587 events
+QC FAIL !! QAT 228016 has 0 odo jumps and 1 unexpected order of events
+----------------------------------------------------------------
+Analysing events for QAT 228054
+QC FAIL !! QAT 228054 has 293 events
+QC FAIL !! QAT 228054 has 0 odo jumps and 1 unexpected order of events
+----------------------------------------------------------------
+Analysing events for QAT 228461
+QC PASS !! QAT 228461 has 396 events
+----------------------------------------------------------------
+Analysing events for QAT 252183
+QC FAIL !! QAT 252183 has 956 events
+QC FAIL !! QAT 252183 has 0 odo jumps and 2 unexpected order of events
+----------------------------------------------------------------
+Analysing events for QAT 45413
+QC FAIL !! QAT 45413 has 1095 events
+QC FAIL !! QAT 45413 has 0 odo jumps and 5 unexpected order of events
+----------------------------------------------------------------
+Analysing events for QAT 45415
+QC FAIL !! QAT 45415 has 24 events
+QC FAIL !! QAT 45415 has 0 odo jumps and 5 unexpected order of events
+----------------------------------------------------------------
+Analysing events for QAT 45424
+QC FAIL !! QAT 45424 has 186 events
+QC FAIL !! QAT 45424 has 0 odo jumps and 1 unexpected order of events
+----------------------------------------------------------------
+Analysing events for QAT-144476
