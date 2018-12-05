@@ -1,10 +1,12 @@
 import csv
 import datetime
 
-
+# location where the csv file will be
+# you can convert the html to csv by copying the tables
 requiredDir = 'd:\\QA'
 
-
+# Create a class called asset to manage the reports for each asset in report
+# use this class to extend functionality or new required reports
 
 class asset:
     asset_name = None
@@ -15,31 +17,41 @@ class asset:
     total_dup_jsum=None
     raw_events=list()
 
+    #create a asset class by providing asset name
     def __init__(self, asset_name):
         self.asset_name = asset_name
         self.raw_events=[]
 
+    #save raw events as a list
     def add_raw_Event(self,data):
         self.raw_events.append(data)
 
+    #show time reversed raw data
     def view_events(self):
         return (self.raw_events.reverse())
 
+    # show summary
     def print_summary(self):
         print("{},{},{},{},{},{}".format(asset.asset_name,asset.total_journeys,asset.total_power_ups,asset.total_fault_pu,asset.total_jusm,asset.total_dup_jsum))
 
 
-total_assets=0
+
 
 total_assets= list()
 
+# a function to parse the string from text to datetime format to perform time calculations
 def time_process(string):
     #20/09/2018 18:09:44 GMT+4
     date = datetime.datetime.strptime(string, '%d/%m/%Y %H:%M:%S GMT+4')
     return (date)
 
+# gives a total number of events
 def analyse(asset):
     print("Analysing Asset {} that has {} events".format(asset.asset_name,len(asset.raw_events)))
+
+# function to analyse power up events
+# the below function considers a journey is in progress from ignition on to ignition off
+# then checks for power ups to determine if it is within the journey or out of it
 
 def analyse_event_powerups(data,asset):
     #print(data)
@@ -48,14 +60,18 @@ def analyse_event_powerups(data,asset):
     Journey_in_progess=False
     event_cursor=0
     total_journeys=0
+    # iterate through each data
     for i in data:
 
         time_min_diff,event_type = i
+        # if event type is ignition sign Journey in Progress
         if event_type=="Ignition On":
             Journey_in_progess=True
+        # if last event was ignition On and current event was ignition off then sign Journey progress off
         elif Journey_in_progess and event_type=="Ignition Off":
             Journey_in_progess=False
             total_journeys+=1
+        # if power up occurs after ignition on then flag as fault
         elif event_type=="Power Up" and Journey_in_progess:
             print("**Power Up** observed during Journey around {} event after {} min from the previous event".format(event_cursor,time_min_diff))
             fault_counter=fault_counter+1
@@ -67,22 +83,34 @@ def analyse_event_powerups(data,asset):
                 print(spacer+asset.raw_events[event_cursor+1])
             except:
                 print("Out of range")
+        # if journey not in progress and power up observed
         elif event_type=="Power Up" and (not Journey_in_progess):
             #print(" Reasonable power up")
             normal_counter=normal_counter+1
+
+        # not accounting an ignition on followed by another ignition on which is also undesireable
         event_cursor=event_cursor+1
+    # below condition only occurs if there was power ups
     if fault_counter>0 or normal_counter>0:
         print("There were {} Power Up faults and {} normals for {}".format(fault_counter,normal_counter,asset.asset_name))
+
+    # assign observed events to the class members
     asset.total_journeys,asset.total_power_ups,asset.total_fault_pu = total_journeys,fault_counter+normal_counter,fault_counter
 
+
+
+# function to check anomalies with journey summary ( often duplicate)
 def analyse_event_jsum_dup(data,asset):
     #print(data)
     fault_counter=0
     event_cursor=0
+    # iterates through events for the asset
     for i in data:
 
         time_min_diff,event_type = i
+        # if event type is Journey summary and time difference between this and the previous event was 0 min
         if event_type=="Journey Summary" and time_min_diff==0:
+            #checks if the previous event was also journey summary to record a fault
             if (asset.raw_events[event_cursor-1].split(',')[1]=="Journey Summary"):
                 print("**Duplicate Journey Summary** observed around {} event after {} min from the previous event".format(event_cursor,time_min_diff))
                 fault_counter=fault_counter+1
@@ -100,6 +128,8 @@ def analyse_event_jsum_dup(data,asset):
         print("{} faults for  {} ".format(fault_counter,asset.asset_name))
         asset.total_dup_jsum = fault_counter
 
+
+# analyse event summary accounterd numbe of ignition to power ups
 def analyse_event_summary(data,asset):
     #try:
     event_type_list=[]
@@ -170,6 +200,7 @@ for asset in total_assets:
         #analyse(i)
     #print(timestamp_list)
     timestamp_list_len=len(timestamp_list)
+    # this below obtaines the time deifference between succesive events to give an idea of the chronology.
     timestamp_diff_min_withevent=[]
     for i in range(0,timestamp_list_len):
         if i>0:
